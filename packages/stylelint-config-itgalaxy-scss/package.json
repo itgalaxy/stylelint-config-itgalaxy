@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy-scss",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Standard shareable config for itgalaxy (scss)",
     "keywords": [
         "stylelint",

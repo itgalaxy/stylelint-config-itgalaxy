@@ -1,4 +1,4 @@
-# Head
+# 1.1.0
 
 - Added: `peerDependencies` in `package.json`.
 
