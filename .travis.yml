@@ -1,0 +1,14 @@
+sudo: false
+
+language: node_js
+node_js:
+  - "6"
+  - "4"
+  - '0.12'
+env:
+  - 'TEST_DIR=packages/stylelint-config-itgalaxy'
+  - 'TEST_DIR=packages/stylelint-config-itgalaxy-scss'
+before_install:
+  - 'cd $TEST_DIR'
+script:
+  - 'npm run travis'

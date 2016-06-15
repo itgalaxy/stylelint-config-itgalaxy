@@ -1,0 +1,53 @@
+{
+    "name": "stylelint-config-itgalaxy-style",
+    "version": "1.0.0",
+    "description": "A mostly reasonable approach to CSS and SCSS.",
+    "scripts": {
+        "preinstall": "npm run install:config && npm run install:config:scss",
+        "install:config": "cd packages/stylelint-config-itgalaxy && npm prune && npm install",
+        "install:config:scss": "cd packages/stylelint-config-itgalaxy-scss && npm prune && npm install",
+        "test": "npm run test:config && npm run test:config:scss",
+        "test:config": "cd packages/stylelint-config-itgalaxy; npm test",
+        "test:config:scss": "cd packages/stylelint-config-itgalaxy-scss; npm test",
+        "travis": "npm run travis:config && npm run travis:config:scss",
+        "travis:config": "cd packages/stylelint-config-itgalaxy; npm run travis",
+        "travis:config:scss": "cd packages/stylelint-config-itgalaxy-scss; npm run travis"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itgalaxy/stylelint-config-itgalaxy.git"
+    },
+    "keywords": [
+        "style guide",
+        "styleguide",
+        "lint",
+        "itgalaxy",
+        "css",
+        "scss",
+        "stylelint"
+    ],
+    "author": "Itgalaxy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/itgalaxy/stylelint-config-itgalaxy/issues"
+    },
+    "alert": "please not install below dependencies and devDependencies, this need only for https://david-dm.org/",
+    "dependencies": {
+        "lodash": "~4.13.0",
+        "stylelint-config-itgalaxy": "~1.0.0",
+        "stylelint-scss": "~1.1.0"
+    },
+    "devDependencies": {
+        "ava": "~0.15.0",
+        "eslint": "~2.12.0",
+        "eslint-config-itgalaxy": "~6.0.0",
+        "eslint-plugin-import": "~1.8.0",
+        "eslint-plugin-jsx-a11y": "~1.4.0",
+        "eslint-plugin-node": "~1.4.0",
+        "eslint-plugin-objects": "~1.1.0",
+        "eslint-plugin-promise": "~1.3.0",
+        "eslint-plugin-react": "~5.1.1",
+        "stylelint": "~6.6.0"
+    },
+    "homepage": "https://github.com/itgalaxy/stylelint-config-itgalaxy"
+}
