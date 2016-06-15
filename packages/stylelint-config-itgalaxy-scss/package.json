@@ -50,7 +50,9 @@
         "travis": "npm run test"
     },
     "peerDependencies": {
-        "stylelint": "~6.6.0"
+        "stylelint": "~6.6.0",
+        "stylelint-config-itgalaxy": "~1.0.0",
+        "stylelint-scss": "~1.1.0"
     },
     "babel": {
         "presets": [
