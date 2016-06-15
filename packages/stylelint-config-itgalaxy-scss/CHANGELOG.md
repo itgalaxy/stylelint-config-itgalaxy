@@ -1,4 +1,4 @@
-# Head
+# 1.1.1
 
 - Fixed: add to dependencies `stylelint-config-itgalaxy`.
 
