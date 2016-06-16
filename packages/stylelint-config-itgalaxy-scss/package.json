@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy-scss",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Standard shareable config for itgalaxy (scss)",
     "keywords": [
         "stylelint",
@@ -27,13 +27,6 @@
     ],
     "dependencies": {
         "lodash": "~4.13.0",
-        "eslint-config-itgalaxy": "~8.0.0",
-        "eslint-plugin-import": "~1.8.0",
-        "eslint-plugin-jsx-a11y": "~1.3.0",
-        "eslint-plugin-node": "~1.4.0",
-        "eslint-plugin-objects": "~1.1.0",
-        "eslint-plugin-promise": "~1.3.0",
-        "eslint-plugin-react": "~5.1.1",
         "stylelint-config-itgalaxy": "~1.0.0",
         "stylelint-scss": "~1.1.0"
     },

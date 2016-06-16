@@ -1,3 +1,7 @@
+# 1.1.3
+
+- Fixed: `dependencies` in package.json.
+
 # 1.1.2
 
 - Fixed: integrate `eslint-plugin-itgalaxy`.
