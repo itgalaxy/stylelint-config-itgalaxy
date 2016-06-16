@@ -11,8 +11,8 @@ function isObject(obj) {
 }
 
 test('test basic properties of config', (t) => {
-    t.truthy(isObject(config.rules), 'rules is object');
-    t.truthy(isObject(config.plugins), 'rules is plugins');
+    t.true(isObject(config.rules), 'rules is object');
+    t.true(isObject(config.plugins), 'rules is plugins');
 });
 
 const validCss = `
@@ -80,7 +80,7 @@ test(
                 warnings
             } = results[0];
 
-            t.falsy(errored, 'no errored');
+            t.false(errored, 'no errored');
             t.is(deprecations.length, 0, 'flags no deprecations');
             t.is(invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
             t.is(warnings.length, 0, 'flags no warnings');
@@ -102,7 +102,7 @@ test(
             } = data;
             const {warnings} = results[0];
 
-            t.truthy(errored, 'errored');
+            t.true(errored, 'errored');
             t.is(warnings.length, 1, 'flags one warning');
             t.is(
                 warnings[0].text,

@@ -1,5 +1,4 @@
-/* eslint-disable no-var, quotes, quote-props, max-lines, import/no-commonjs */
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable */
 /* eslint-env node */
 var baseConfig = require('stylelint-config-itgalaxy');
 var lodash = require('lodash');

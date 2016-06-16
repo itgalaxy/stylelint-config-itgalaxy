@@ -1,5 +1,5 @@
-/* eslint-disable quote-props, max-lines, import/no-commonjs */
-/* eslint-env node */
+/* eslint-disable */
+
 module.exports = {
     'rules': {
         'color-hex-case': 'lower',
