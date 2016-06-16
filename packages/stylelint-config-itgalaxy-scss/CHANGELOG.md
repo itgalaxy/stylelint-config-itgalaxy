@@ -1,6 +1,6 @@
 # 1.1.3
 
-- Fixed: `dependencies` in package.json.
+- Fixed: `devDependencies` and `dependencies` in package.json.
 
 # 1.1.2
 
