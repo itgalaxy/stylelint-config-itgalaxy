@@ -1,3 +1,7 @@
+# 2.0.0
+
+- Changed: `stylelint-config-itgalaxy` version and semver.
+
 # 1.1.3
 
 - Fixed: `devDependencies` and `dependencies` in package.json.

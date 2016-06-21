@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy-scss",
-    "version": "1.1.3",
+    "version": "2.0.0",
     "description": "Standard shareable config for itgalaxy (scss)",
     "keywords": [
         "stylelint",
@@ -26,23 +26,23 @@
         "index.js"
     ],
     "dependencies": {
-        "lodash": "~4.13.0",
-        "stylelint-config-itgalaxy": "~1.0.0",
-        "stylelint-scss": "~1.1.0"
+        "lodash": "^4.13.0",
+        "stylelint-config-itgalaxy": "^2.0.0",
+        "stylelint-scss": "^1.1.0"
     },
     "devDependencies": {
-        "ava": "~0.15.0",
-        "eslint": "~2.12.0",
-        "eslint-plugin-ava": "~2.5.0",
-        "eslint-plugin-import": "~1.8.0",
-        "eslint-plugin-jsx-a11y": "~1.5.0",
-        "eslint-plugin-lodash": "~1.9.0",
-        "eslint-plugin-node": "~1.4.0",
-        "eslint-plugin-objects": "~1.1.0",
-        "eslint-plugin-promise": "~1.3.0",
-        "eslint-plugin-react": "~5.1.0",
-        "eslint-plugin-itgalaxy": "~2.0.0",
-        "stylelint": "~6.6.0"
+        "ava": "^0.15.0",
+        "eslint": "^2.12.0",
+        "eslint-plugin-ava": "^2.5.0",
+        "eslint-plugin-import": "^1.8.0",
+        "eslint-plugin-jsx-a11y": "^1.5.0",
+        "eslint-plugin-lodash": "^1.9.0",
+        "eslint-plugin-node": "^1.4.0",
+        "eslint-plugin-objects": "^1.1.0",
+        "eslint-plugin-promise": "^1.3.0",
+        "eslint-plugin-react": "^5.1.0",
+        "eslint-plugin-itgalaxy": "^2.1.0",
+        "stylelint": "^6.7.0"
     },
     "scripts": {
         "lint:eslint": "eslint .",
@@ -52,7 +52,7 @@
         "travis": "npm run test"
     },
     "peerDependencies": {
-        "stylelint": "~6.6.0"
+        "stylelint": "^6.0.0"
     },
     "babel": {
         "presets": [
