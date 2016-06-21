@@ -1,4 +1,4 @@
-# Head
+# 2.0.0
 
 - Changed: `devDependencies` and `peerDependencies` semver.
 - Added: new version `stylelint`.
