@@ -1,3 +1,8 @@
+# Head
+
+- Changed: `devDependencies` and `peerDependencies` semver.
+- Added: new version `stylelint`.
+
 # 1.0.2
 
 - Fixed: `devDependencies` in package.json.

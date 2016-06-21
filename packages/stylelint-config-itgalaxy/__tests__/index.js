@@ -92,8 +92,8 @@ const validCss = `@import url("x.css");
             repeating-linear-gradient(
                 -45deg,
                 transparent,
-                 #fff 25px,
-                 rgba(255, 255, 255, 1) 50px
+                #fff 25px,
+                rgba(255, 255, 255, 1) 50px
             );
         height: 10rem;
     }
@@ -105,6 +105,13 @@ const validCss = `@import url("x.css");
     }
 }
 
+.foo {
+    margin: 1px 1px 1px 2px;
+}
+
+[target="_blank"] {
+    display: block;
+}
 `;
 
 const invalidCss = `a {

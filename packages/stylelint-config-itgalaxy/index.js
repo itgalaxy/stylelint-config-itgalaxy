@@ -685,10 +685,10 @@ module.exports = {
         'comment-empty-line-before': [
             'always',
             {
-                except: [
+                'except': [
                     'first-nested'
                 ],
-                ignore: [
+                'ignore': [
                     'stylelint-commands',
                     'between-comments'
                 ]
@@ -700,7 +700,12 @@ module.exports = {
             '/(F|f)(I|i)(X|x)(M|m)(E|e)/'
         ]],
 
-        indentation: 4,
+        'indentation': [
+            4,
+            {
+                'indentInsideParens': 'once'
+            }
+        ],
         'max-empty-lines': 1,
         'max-line-length': 120,
         'max-nesting-depth': 7,
