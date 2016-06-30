@@ -1,4 +1,4 @@
-# Head
+# 2.1.1
 
 - Fixed: move `merge` from `devDependencies` to `dependencies`.
 
