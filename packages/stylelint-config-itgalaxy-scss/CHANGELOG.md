@@ -1,3 +1,7 @@
+# Head
+
+- Change: behavior `at-rule-blacklist`, `at-rule-no-unknown` rules.
+
 # 2.0.0
 
 - Changed: `stylelint-config-itgalaxy` version and semver.

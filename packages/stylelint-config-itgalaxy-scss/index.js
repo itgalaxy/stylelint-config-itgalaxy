@@ -1,10 +1,42 @@
 /* eslint-disable */
 /* eslint-env node */
 var baseConfig = require('stylelint-config-itgalaxy');
-var lodash = require('lodash');
+var merge = require('merge');
 
-module.exports = lodash.defaultsDeep({}, baseConfig, {
-    "rules": {
+module.exports = {
+    rules: merge(baseConfig.rules, {
+        'block-closing-brace-newline-after': [
+            'always',
+            {
+                'ignoreAtRules': [
+                    'if',
+                    'else'
+                ]
+            }
+        ],
+
+        'at-rule-blacklist': ['debug'],
+        'at-rule-no-unknown': [
+            true, {
+                'ignoreAtRules': [
+                    'mixin',
+                    'include',
+                    'extend',
+                    'at-root',
+                    'debug',
+                    'warn',
+                    'error',
+                    'if',
+                    'for',
+                    'each',
+                    'while',
+                    'else',
+                    'function',
+                    'return'
+                ],
+            }
+        ],
+
         "scss/at-extend-no-missing-placeholder": null,
         "scss/at-function-pattern": "^[a-z][a-z0-9-_]{0,30}[a-z0-9]$",
         "scss/at-import-no-partial-extension": true,
@@ -15,8 +47,8 @@ module.exports = lodash.defaultsDeep({}, baseConfig, {
         "scss/dollar-variable-pattern": "^[a-z][a-z0-9-_]{0,50}[a-z0-9]$",
         "scss/percent-placeholder-pattern": "^[a-z][a-z0-9-_]{0,30}[a-z0-9]$",
         "scss/selector-no-redundant-nesting-selector": true
-    },
+    }),
     "plugins": [
         "stylelint-scss"
     ]
-});
+};

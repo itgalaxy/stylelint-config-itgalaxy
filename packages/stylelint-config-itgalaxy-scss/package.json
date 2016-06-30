@@ -26,7 +26,7 @@
         "index.js"
     ],
     "dependencies": {
-        "lodash": "^4.13.0",
+        "merge": "^1.2.0",
         "stylelint-config-itgalaxy": "^2.0.0",
         "stylelint-scss": "^1.1.0"
     },
@@ -42,7 +42,7 @@
         "eslint-plugin-promise": "^1.3.0",
         "eslint-plugin-react": "^5.1.0",
         "eslint-plugin-itgalaxy": "^2.1.0",
-        "stylelint": "^6.7.0"
+        "stylelint": "^6.8.0"
     },
     "scripts": {
         "lint:eslint": "eslint .",
