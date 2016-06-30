@@ -1,3 +1,7 @@
+# Head
+
+- Fixed: move `merge` from `devDependencies` to `dependencies`.
+
 # 2.1.0
 
 - Added: new rule `at-rule-no-unknown`.

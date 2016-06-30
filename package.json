@@ -33,6 +33,7 @@
     },
     "alert": "please not install below dependencies and devDependencies, this need only for https://david-dm.org/",
     "dependencies": {
+        "merge": "^1.2.0",
         "lodash": "^4.13.0",
         "stylelint-scss": "^1.1.0"
     },
@@ -48,8 +49,7 @@
         "eslint-plugin-promise": "^1.3.0",
         "eslint-plugin-react": "^5.1.0",
         "eslint-plugin-itgalaxy": "^2.1.0",
-        "stylelint": "^6.7.0",
-        "merge": "^1.2.0"
+        "stylelint": "^6.7.0"
     },
     "homepage": "https://github.com/itgalaxy/stylelint-config-itgalaxy"
 }
