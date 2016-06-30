@@ -1,4 +1,4 @@
-# Head
+# 3.0.0
 
 - Change: behavior `at-rule-blacklist`, `at-rule-no-unknown` rules.
 
