@@ -1,4 +1,4 @@
-# Head
+# 2.1.2
 
 - Fixed: add to `files` package.json directory 'lib'.
 
