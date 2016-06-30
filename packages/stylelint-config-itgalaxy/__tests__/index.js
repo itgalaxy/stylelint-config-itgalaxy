@@ -73,7 +73,7 @@ const validCss = `@import url("x.css");
     .selector-i + .selector-ii {
         top: 3.24563431px;
         background: color(rgb(0, 0, 0) lightness(50%));
-        font-family: helvetica, "arial black", sans-serif;
+        font-family: Arial, helvetica, "arial black", "sake_case_font", "MyFontVersion6", sans-serif;
         font-weight: lighter;
     }
 }
@@ -81,6 +81,7 @@ const validCss = `@import url("x.css");
 /* Flush single line comment */
 @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
+    /* Comment here */
     .selector {
         margin: 10px;
         margin-bottom: 5px;
@@ -105,12 +106,32 @@ const validCss = `@import url("x.css");
     }
 }
 
+/*
+ * Some description about section
+ */
+
 .foo {
     margin: 1px 1px 1px 2px;
 }
 
 [target="_blank"] {
     display: block;
+}
+
+.class-1 .class-2 .class-3 .class-4 .class-5 {
+    display: block;
+}
+
+@supports (display: flex) and (max-width: 100px) {
+    body {
+        display: flex;
+        max-width: 100px;
+    }
+}
+
+.bar {
+    font-size: 16px;
+    font-size: 1rem;
 }
 `;
 

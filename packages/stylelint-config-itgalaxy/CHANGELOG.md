@@ -1,3 +1,8 @@
+# Head
+
+- Added: new rule `at-rule-no-unknown`.
+- Added: new rule `no-empty-source`.
+
 # 2.0.0
 
 - Changed: `devDependencies` and `peerDependencies` semver.

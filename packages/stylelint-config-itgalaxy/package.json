@@ -37,7 +37,8 @@
         "eslint-plugin-promise": "^1.0.0",
         "eslint-plugin-react": "^5.0.0",
         "eslint-plugin-itgalaxy": "^2.1.0",
-        "stylelint": "^6.7.0"
+        "stylelint": "^6.7.0",
+        "merge": "^1.2.0"
     },
     "scripts": {
         "lint:eslint": "eslint .",
