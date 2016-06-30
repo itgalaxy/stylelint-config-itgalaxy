@@ -23,7 +23,8 @@
     "homepage": "https://github.com/itgalaxy/stylelint-config-itgalaxy",
     "main": "index.js",
     "files": [
-        "index.js"
+        "index.js",
+        "lib"
     ],
     "dependencies": {
         "merge": "^1.2.0"

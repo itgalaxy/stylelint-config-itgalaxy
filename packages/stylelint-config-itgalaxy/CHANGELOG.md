@@ -1,3 +1,7 @@
+# Head
+
+- Fixed: add to `files` package.json directory 'lib'.
+
 # 2.1.1
 
 - Fixed: move `merge` from `devDependencies` to `dependencies`.
