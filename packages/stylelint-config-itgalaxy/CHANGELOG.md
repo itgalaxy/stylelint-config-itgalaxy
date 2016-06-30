@@ -1,4 +1,4 @@
-# Head
+# 2.1.0
 
 - Added: new rule `at-rule-no-unknown`.
 - Added: new rule `no-empty-source`.
