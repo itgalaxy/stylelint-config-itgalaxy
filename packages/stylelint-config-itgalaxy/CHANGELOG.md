@@ -1,3 +1,8 @@
+# Head
+
+- Added: `function-url-no-scheme-relative` rule.
+- Added: `selector-attribute-quotes` rule.
+
 # 2.1.2
 
 - Fixed: add to `files` package.json directory 'lib'.

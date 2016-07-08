@@ -8,6 +8,7 @@ module.exports = {
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
     'selector-attribute-operator-whitelist': null,
+    'selector-attribute-quotes': 'always',
     'selector-class-pattern': '^[a-z][a-z0-9-_]{0,44}[a-z0-9]$',
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',

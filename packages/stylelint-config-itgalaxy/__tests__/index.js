@@ -17,6 +17,7 @@ const validCss = `@import url("x.css");
 
 :root {
     --foo-bar: 1px;
+    --foo-var: 1em;
 }
 
 /**
@@ -114,6 +115,10 @@ const validCss = `@import url("x.css");
     margin: 1px 1px 1px 2px;
 }
 
+[src] {
+    text-decoration: underline;
+}
+
 [target="_blank"] {
     display: block;
 }
@@ -133,6 +138,13 @@ const validCss = `@import url("x.css");
     font-size: 16px;
     font-size: 1rem;
 }
+
+/* stylelint-disable block-no-empty */
+/* Some reason */
+.template {
+}
+/* stylelint-enable block-no-empty */
+
 `;
 
 const invalidCss = `a {
@@ -145,7 +157,7 @@ test(
     'no warnings, deprecations and invalid options with valid css',
     (t) => stylelint.lint({
         code: validCss,
-        config: config
+        config
     })
         .then((data) => {
             const {
@@ -171,7 +183,7 @@ test(
     'a warning with invalid css',
     (t) => stylelint.lint({
         code: invalidCss,
-        config: config
+        config
     })
         .then((data) => {
             const {

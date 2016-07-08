@@ -15,6 +15,7 @@ module.exports = {
     'function-parentheses-newline-inside': 'always-multi-line',
     'function-parentheses-space-inside': 'never-single-line',
     'function-url-data-uris': 'never',
+    'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
     'function-whitelist': null,
     'function-whitespace-after': 'always'
