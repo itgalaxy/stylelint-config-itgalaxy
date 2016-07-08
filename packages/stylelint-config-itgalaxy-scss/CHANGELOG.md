@@ -1,4 +1,4 @@
-# Head
+# 4.0.0
 
 - Changed: update minimal version `stylelint-config-itgalaxy` package.
 - Changed: update minimal version `stylelint-scss` package.
