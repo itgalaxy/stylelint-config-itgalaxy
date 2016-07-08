@@ -1,4 +1,4 @@
-# Head
+# 3.0.0
 
 - Added: `function-url-no-scheme-relative` rule.
 - Added: `selector-attribute-quotes` rule.
