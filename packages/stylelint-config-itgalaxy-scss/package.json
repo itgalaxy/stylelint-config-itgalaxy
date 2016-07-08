@@ -27,7 +27,7 @@
     ],
     "dependencies": {
         "merge": "^1.2.0",
-        "stylelint-config-itgalaxy": "^3.0.0",
+        "stylelint-config-itgalaxy": "^4.0.0",
         "stylelint-scss": "^1.2.0"
     },
     "devDependencies": {

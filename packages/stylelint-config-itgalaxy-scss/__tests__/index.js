@@ -76,13 +76,13 @@ test(
                 results
             } = data;
             const {
-                // deprecations,
+                deprecations,
                 invalidOptionWarnings,
                 warnings
             } = results[0];
 
             t.false(errored, 'no errored');
-            // t.is(deprecations.length, 0, 'flags no deprecations');
+            t.is(deprecations.length, 0, 'flags no deprecations');
             t.is(invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
             t.is(warnings.length, 0, 'flags no warnings');
 
