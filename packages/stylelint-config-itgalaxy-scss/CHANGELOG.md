@@ -1,6 +1,11 @@
+# 4.0.0
+
+- Changed: update minimal version `stylelint-config-itgalaxy` package.
+- Changed: update minimal version `stylelint-scss` package.
+
 # 3.0.0
 
-- Change: behavior `at-rule-blacklist`, `at-rule-no-unknown` rules.
+- Changed: behavior `at-rule-blacklist`, `at-rule-no-unknown` rules.
 
 # 2.0.0
 

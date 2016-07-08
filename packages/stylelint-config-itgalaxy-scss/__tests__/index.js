@@ -15,9 +15,10 @@ test('test basic properties of config', (t) => {
     t.true(isObject(config.plugins), 'rules is plugins');
 });
 
-const validCss = `
+const validScss = `
 @import "file";
 @import "_path/to/file";
+@import "some.css";
 
 @function my-calculation-function($some-number, $another-number) {
     @return $some-number + $another-number;
@@ -57,7 +58,7 @@ const validCss = `
 
 `;
 
-const invalidCss = `
+const invalidScss = `
 @import "path/to/file.scss"
 
 `;
@@ -65,9 +66,9 @@ const invalidCss = `
 test(
     'no warnings, deprecations and invalid options with valid scss',
     (t) => stylelint.lint({
-        code: validCss,
-        config: config,
-        syntax: 'scss'
+        code: validScss,
+        syntax: 'scss',
+        config
     })
         .then((data) => {
             const {
@@ -92,8 +93,9 @@ test(
 test(
     'a warning with invalid scss',
     (t) => stylelint.lint({
-        code: invalidCss,
-        config: config
+        code: invalidScss,
+        syntax: 'scss',
+        config
     })
         .then((data) => {
             const {
@@ -106,7 +108,7 @@ test(
             t.is(warnings.length, 1, 'flags one warning');
             t.is(
                 warnings[0].text,
-                'Unexpected file extension in imported partial name (scss/at-import-no-partial-extension)',
+                'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-blacklist)',
                 'correct warning text'
             );
 
