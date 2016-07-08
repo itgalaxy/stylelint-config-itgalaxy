@@ -1,3 +1,7 @@
+# Head
+
+- Removed: support node 0.12.
+
 # 3.0.0
 
 - Added: `function-url-no-scheme-relative` rule.
