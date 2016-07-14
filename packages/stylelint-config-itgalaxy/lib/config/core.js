@@ -26,7 +26,6 @@ var rootRule = require('./rules/root-rule');
 var rule = require('./rules/rule');
 var mediaFeature = require('./rules/media-feature');
 var customMedia = require('./rules/custom-media');
-var mediaQuery = require('./rules/media-query');
 var mediaQueryList = require('./rules/media-query-list');
 var atRule = require('./rules/at-rule');
 var stylelintDisableComment = require('./rules/stylelint-disable-comment');
@@ -60,7 +59,6 @@ module.exports = {
         rule,
         mediaFeature,
         customMedia,
-        mediaQuery,
         mediaQueryList,
         atRule,
         stylelintDisableComment,

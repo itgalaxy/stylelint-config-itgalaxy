@@ -5,9 +5,6 @@
 module.exports = {
     'indentation': [
         4,
-        {
-            'indentInsideParens': 'once'
-        }
     ],
     'max-empty-lines': 1,
     'max-line-length': 120,
@@ -20,7 +17,7 @@ module.exports = {
     'no-extra-semicolons': true,
     'no-indistinguishable-colors': null,
     'no-invalid-double-slash-comments': true,
-    'no-missing-eof-newline': true,
+    'no-missing-end-of-source-newline': true,
     'no-unknown-animations': true,
     'no-unsupported-browser-features': null
 };

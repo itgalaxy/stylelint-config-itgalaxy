@@ -1,3 +1,10 @@
+# 5.0.0
+
+- Changed: update major version `stylelint`.
+- Changed: rename `no-missing-eof-newline` to `no-missing-end-of-source-newline`.
+- Changed: rename `media-query-parentheses-space-inside` to `media-feature-parentheses-space-inside`.
+- Added: `property-no-unknown` rule.
+
 # 4.0.0
 
 - Removed: support node 0.12.

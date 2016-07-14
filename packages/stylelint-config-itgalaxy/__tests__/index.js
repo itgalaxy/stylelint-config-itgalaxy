@@ -123,6 +123,14 @@ const validCss = `@import url("x.css");
     display: block;
 }
 
+[src][target="_blank"] {
+    display: block;
+}
+
+[target="_blank"][title="test"] {
+    display: block;
+}
+
 .class-1 .class-2 .class-3 .class-4 .class-5 {
     display: block;
 }
