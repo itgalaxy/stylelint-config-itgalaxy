@@ -1,3 +1,8 @@
+# 5.0.0
+
+- Changed: update major version `stylelint`.
+- Changed: update major version `stylelint-config-itgalaxy`.
+
 # 4.0.0
 
 - Changed: update minimal version `stylelint-config-itgalaxy` package.
