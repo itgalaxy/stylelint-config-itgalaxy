@@ -1,3 +1,7 @@
+# 6.0.0
+
+- Changed: `comment-word-blacklist` now get primary option as not nested array.
+
 # 5.0.0
 
 - Changed: update major version `stylelint`.
