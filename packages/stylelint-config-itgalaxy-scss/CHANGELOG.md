@@ -1,3 +1,8 @@
+# 6.0.0
+
+- Changed: disable rule `scss/partial-no-import`, because now bugs in `stylelint-scss` 1.2.1.
+- Changed: update major version `stylelint-config-itgalaxy`.
+
 # 5.0.0
 
 - Changed: update major version `stylelint`.

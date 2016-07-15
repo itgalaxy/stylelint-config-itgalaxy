@@ -17,23 +17,24 @@ module.exports = {
 
         'at-rule-blacklist': ['debug'],
         'at-rule-no-unknown': [
-            true, {
+            true,
+            {
                 'ignoreAtRules': [
-                    'mixin',
-                    'include',
-                    'extend',
                     'at-root',
                     'debug',
-                    'warn',
-                    'error',
-                    'if',
-                    'for',
                     'each',
-                    'while',
                     'else',
+                    'error',
+                    'extend',
+                    'for',
                     'function',
-                    'return'
-                ],
+                    'if',
+                    'include',
+                    'mixin',
+                    'return',
+                    'warn',
+                    'while'
+                ]
             }
         ],
 
@@ -55,7 +56,7 @@ module.exports = {
 
         "scss/media-feature-value-dollar-variable": null,
 
-        "scss/partial-no-import": true,
+        "scss/partial-no-import": null,
 
         "scss/selector-no-redundant-nesting-selector": true
     }),
