@@ -20,6 +20,16 @@ const validScss = `
 @import "_path/to/file";
 @import "some.css";
 
+// Variables
+$variable: 10px;
+$box-shadow:
+    0 0 0 1px #5b9dd9,
+    0 0 2px 1px rgba(30, 140, 190, 0.8);
+$sum: 10px + 10px;
+$sum:
+    100px + 100px + 100px + 100px + 100px + 100px
+    - 8000px * 2px / 4px;
+
 @function my-calculation-function($some-number, $another-number) {
     @return $some-number + $another-number;
 }
@@ -34,7 +44,7 @@ const validScss = `
 
 .class-one {
     &.foo {
-        display: block;
+        display: block; // Inline-comment
     }
 
     .foo > & {
@@ -56,6 +66,10 @@ const validScss = `
     }
 }
 
+.class-with-mixin {
+    @include mixin-name();
+    width: 10px * 10;
+}
 `;
 
 const invalidScss = `
@@ -65,53 +79,62 @@ const invalidScss = `
 
 test(
     'no warnings, deprecations and invalid options with valid scss',
-    (t) => stylelint.lint({
-        code: validScss,
-        syntax: 'scss',
-        config
-    })
-        .then((data) => {
-            const {
-                errored,
-                results
-            } = data;
-            const {
-                deprecations,
-                invalidOptionWarnings,
-                warnings
-            } = results[0];
+    (t) => {
+        config.rules['scss/partial-no-import'] = null;
 
-            t.false(errored, 'no errored');
-            t.is(deprecations.length, 0, 'flags no deprecations');
-            t.is(invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
-            t.is(warnings.length, 0, 'flags no warnings');
-
-            return true;
+        return stylelint.lint({
+            code: validScss,
+            syntax: 'scss',
+            config
         })
+            .then((data) => {
+                const {
+                    errored,
+                    results
+                } = data;
+                const {
+                    deprecations,
+                    invalidOptionWarnings,
+                    warnings
+                } = results[0];
+
+                t.false(errored, 'no errored');
+                t.is(deprecations.length, 0, 'flags no deprecations');
+                t.is(invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
+                t.is(warnings.length, 0, 'flags no warnings');
+
+                return true;
+            });
+    }
 );
 
 test(
     'a warning with invalid scss',
-    (t) => stylelint.lint({
-        code: invalidScss,
-        syntax: 'scss',
-        config
-    })
-        .then((data) => {
-            const {
-                errored,
-                results
-            } = data;
-            const {warnings} = results[0];
+    (t) => {
+        config.rules['scss/partial-no-import'] = null;
 
-            t.true(errored, 'errored');
-            t.is(warnings.length, 1, 'flags one warning');
-            t.is(
-                warnings[0].text,
-                'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-blacklist)',
-                'correct warning text'
-            );
-
-            return false;
+        return stylelint.lint({
+            code: invalidScss,
+            syntax: 'scss',
+            config
         })
+            .then((data) => {
+                const {
+                    errored,
+                    results
+                } = data;
+                const {warnings} = results[0];
+
+                t.true(errored, 'errored');
+                t.is(warnings.length, 1, 'flags one warning');
+                t.is(
+                    warnings[0].text,
+                    'Unexpected extension ".scss" in imported partial name'
+                        + ' (scss/at-import-partial-extension-blacklist)',
+                    'correct warning text'
+                );
+
+                return false;
+            });
+    }
 );

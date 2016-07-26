@@ -1,3 +1,7 @@
+# Head
+
+- Chore(package): update version `eslint-plugin-itgalaxy` to `6.0.0`.
+
 # 6.0.0
 
 - Changed: `comment-word-blacklist` now get primary option as not nested array.

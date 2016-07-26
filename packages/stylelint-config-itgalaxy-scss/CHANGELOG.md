@@ -1,17 +1,34 @@
+# Head
+
+- Added: `at-mixin-argumentless-call-parentheses` rule.
+- Added: `dollar-variable-colon-newline-after` rule.
+- Added: `dollar-variable-colon-space-after` rule
+- Added: `dollar-variable-colon-space-before` rule.
+- Added: `double-slash-comment-whitespace-inside` rule.
+- Added: `operator-no-newline-after` rule.
+- Added: `operator-no-unspaced` rule.
+- Changed: enable `partial-no-import` rule.
+- Chore: add to config `double-slash-comment-empty-line-before` rule for easy tracking.
+- Chore: add to config `double-slash-comment-inline` rule for easy tracking.
+- Chore: add to config `operator-no-newline-before` rule for easy tracking.
+- Chore(package): update minimal version `stylelint-scss` to `1.3.0`.
+- Chore(package): update version `eslint-plugin-itgalaxy` to `6.0.0`.
+- Chore: more tests.
+
 # 6.0.0
 
-- Changed: disable rule `scss/partial-no-import`, because now bugs in `stylelint-scss` 1.2.1.
-- Changed: update major version `stylelint-config-itgalaxy`.
+- Changed: disable rule `partial-no-import`, because now bugs in `stylelint-scss` 1.2.1.
+- Chore(package): update major version `stylelint-config-itgalaxy`.
 
 # 5.0.0
 
-- Changed: update major version `stylelint`.
-- Changed: update major version `stylelint-config-itgalaxy`.
+- Chore(package): update major version `stylelint`.
+- Chore(package): update major version `stylelint-config-itgalaxy`.
 
 # 4.0.0
 
-- Changed: update minimal version `stylelint-config-itgalaxy` package.
-- Changed: update minimal version `stylelint-scss` package.
+- Chore(package): update minimal version `stylelint-config-itgalaxy` package.
+- Chore(package): update minimal version `stylelint-scss` package.
 - Removed: support node 0.12.
 
 # 3.0.0
@@ -20,7 +37,7 @@
 
 # 2.0.0
 
-- Changed: `stylelint-config-itgalaxy` version and semver.
+- Chore(package): `stylelint-config-itgalaxy` version and semver.
 
 # 1.1.3
 
