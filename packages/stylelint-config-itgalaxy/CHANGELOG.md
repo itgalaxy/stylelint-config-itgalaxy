@@ -1,3 +1,7 @@
+# 8.0.0
+
+- Changed(revert): use option `blockless-group` instead `blockless-after-same-name-blockless` from `except` in `at-rule-empty-line-before` rule.
+
 # 7.0.0
 
 - Added: `block-closing-brace-empty-line-before` rule.
@@ -18,7 +22,7 @@
 
 # 5.0.0
 
-- Changed: update major version `stylelint`.
+- Chore(package)(breaking changes): update version `stylelint` to `7.0.0`.
 - Changed: rename `no-missing-eof-newline` to `no-missing-end-of-source-newline`.
 - Changed: rename `media-query-parentheses-space-inside` to `media-feature-parentheses-space-inside`.
 - Added: `property-no-unknown` rule.
@@ -48,15 +52,15 @@
 # 2.0.0
 
 - Changed: `devDependencies` and `peerDependencies` semver.
-- Added: new version `stylelint`.
+- Chore(package): update `stylelint`.
 
 # 1.0.2
 
-- Fixed: `devDependencies` in package.json.
+- Chore: update `devDependencies` in package.json.
 
 # 1.0.1
 
-- Fixed: integrate `eslint-plugin-itgalaxy`.
+- Chore: integrate `eslint-plugin-itgalaxy` and fix eslint errors.
 
 # 1.0.0
 
