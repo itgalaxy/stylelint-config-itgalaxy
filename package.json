@@ -2,6 +2,7 @@
     "name": "stylelint-config-itgalaxy-style",
     "version": "1.0.0",
     "description": "A mostly reasonable approach to CSS and SCSS.",
+    "private": true,
     "scripts": {
         "preinstall": "npm run install:config && npm run install:config:scss",
         "install:config": "cd packages/stylelint-config-itgalaxy && npm prune && npm install",
@@ -41,14 +42,12 @@
         "eslint": "^3.0.0",
         "eslint-plugin-ava": "^2.5.0",
         "eslint-plugin-import": "^1.10.0",
-        "eslint-plugin-itgalaxy": "^6.0.0",
-        "eslint-plugin-jsx-a11y": "^2.0.0",
+        "eslint-plugin-itgalaxy": "^8.0.0",
         "eslint-plugin-lodash": "^1.9.0",
         "eslint-plugin-node": "^2.0.0",
         "eslint-plugin-objects": "^1.1.0",
         "eslint-plugin-promise": "^2.0.0",
-        "eslint-plugin-react": "^5.2.0",
-        "stylelint": "^7.0.0"
+        "stylelint": "^7.1.0"
     },
     "homepage": "https://github.com/itgalaxy/stylelint-config-itgalaxy"
 }
