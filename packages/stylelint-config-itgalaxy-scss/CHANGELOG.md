@@ -1,3 +1,7 @@
+# 8.1.0
+
+- Added: `at-rule-empty-line-before` rule. Override from `stylelint-config-itgalaxy` to ignore `else` at-rule.
+
 # 8.0.0
 
 - Chore(package)(breaking changes): update minimal version `stylelint-config-itgalaxy` to `7.0.0`.
