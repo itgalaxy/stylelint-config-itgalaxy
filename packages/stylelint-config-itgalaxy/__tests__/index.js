@@ -48,6 +48,12 @@ const validCss = `@import url("x.css");
     top: calc(calc(1em * 2) / 3);
     animation: slip-n-slide 150ms linear;
     padding: 10px !important;
+
+    @media print {
+        body {
+            font-size: 10px;
+        }
+    }
 }
 
 .selector-x {

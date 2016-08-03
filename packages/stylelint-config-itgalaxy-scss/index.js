@@ -15,7 +15,9 @@ module.exports = {
             }
         ],
 
-        'at-rule-blacklist': ['debug'],
+        'at-rule-blacklist': [
+            'debug'
+        ],
         'at-rule-no-unknown': [
             true,
             {

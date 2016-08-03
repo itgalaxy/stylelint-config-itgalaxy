@@ -1,4 +1,8 @@
-# Head
+# 8.0.0
+
+- Chore(package)(breaking changes): update minimal version `stylelint-config-itgalaxy` to `7.0.0`.
+
+# 7.0.0
 
 - Added: `at-mixin-argumentless-call-parentheses` rule.
 - Added: `dollar-variable-colon-newline-after` rule.

@@ -15,6 +15,7 @@ module.exports = {
             ]
         }
     ],
+    'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
     'comment-word-blacklist': [
         '/(T|t)(O|o)(D|d)(O|o)/',

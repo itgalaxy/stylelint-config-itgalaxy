@@ -1,6 +1,16 @@
-# Head
+# 7.0.0
 
+- Added: `block-closing-brace-empty-line-before` rule.
+- Added: `comment-no-empty` rule.
+- Added: `custom-property-empty-line-before` rule.
+- Added: `declaration-empty-line-before` rule.
+- Added: `media-feature-name-case` rule.
+- Changed: use option `blockless-after-same-name-blockless` instead `blockless-group` from `except` in `at-rule-empty-line-before` rule.
+- Chore: add rule `selector-nested-pattern` for tracking.
+- Chore: add rule `selector-pseudo-class-blacklist` for tracking.
+- Chore: add rule `selector-pseudo-class-whitelist` for tracking.
 - Chore(package): update version `eslint-plugin-itgalaxy` to `6.0.0`.
+- Removed: option `all-nested` from `ignore` in `at-rule-empty-line-before` rule.
 
 # 6.0.0
 

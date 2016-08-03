@@ -8,12 +8,11 @@ module.exports = {
         'always',
         {
             'except': [
-                'blockless-group',
+                'blockless-after-same-name-blockless',
                 'first-nested'
             ],
             'ignore': [
-                'after-comment',
-                'all-nested'
+                'after-comment'
             ]
         }
     ],
