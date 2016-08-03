@@ -1,3 +1,8 @@
+# 9.0.0
+
+- Chore(package)(breaking changes): update minimal version `stylelint-config-itgalaxy` to `8.0.0`.
+- Changed(revert): use option `blockless-group` instead `blockless-after-same-name-blockless` from `except` in `at-rule-empty-line-before` rule.
+
 # 8.1.0
 
 - Added: `at-rule-empty-line-before` rule. Override from `stylelint-config-itgalaxy` to ignore `else` at-rule.
@@ -5,12 +10,13 @@
 # 8.0.0
 
 - Chore(package)(breaking changes): update minimal version `stylelint-config-itgalaxy` to `7.0.0`.
+- Changed: use option `blockless-after-same-name-blockless` instead `blockless-group` from `except` in `at-rule-empty-line-before` rule.
 
 # 7.0.0
 
 - Added: `at-mixin-argumentless-call-parentheses` rule.
 - Added: `dollar-variable-colon-newline-after` rule.
-- Added: `dollar-variable-colon-space-after` rule
+- Added: `dollar-variable-colon-space-after` rule.
 - Added: `dollar-variable-colon-space-before` rule.
 - Added: `double-slash-comment-whitespace-inside` rule.
 - Added: `operator-no-newline-after` rule.
@@ -57,7 +63,7 @@
 
 # 1.1.1
 
-- Fixed: add to dependencies `stylelint-config-itgalaxy`.
+- Chore: add to dependencies `stylelint-config-itgalaxy`.
 
 # 1.1.0
 
