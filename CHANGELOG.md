@@ -3,6 +3,8 @@
 - Changed: enable `no-browser-hacks` rule in `core` preset.
 - Changed: disable `no-browser-hacks` rule in `scss` preset.
 - Chore(major update): merge package `stylelint-config-itgalaxy` with `stylelint-config-itgalaxy-scss`.
+- Chore: use `Object.assign` instead `merge` package.
+- Chore: `devDependencies` and `peerDependencies` now have equals version of packages.
 - Deps: update the minimal version of `npm-run-all` from `2.3.0` to `3.0.0`.
 - Fixed: add `content` to `ignoreAtRules` in `at-rule-no-unknown` rule in `scss` preset.
 
