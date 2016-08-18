@@ -1,3 +1,7 @@
+# Head
+
+- Chore(package): add all `peerDependencies` for `eslint-plugin-itgalaxy`.
+
 # 9.0.0
 
 - Changed: enable `no-browser-hacks` rule in `core` preset.
