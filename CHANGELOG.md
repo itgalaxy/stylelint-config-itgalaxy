@@ -1,4 +1,4 @@
-# Head
+# 9.0.0
 
 - Changed: enable `no-browser-hacks` rule in `core` preset.
 - Changed: disable `no-browser-hacks` rule in `scss` preset.
