@@ -44,6 +44,7 @@
         "eslint-plugin-itgalaxy": "^11.0.0",
         "eslint-plugin-node": "^2.0.0",
         "eslint-plugin-promise": "^2.0.0",
+        "eslint-plugin-xo": "^0.5.0",
         "npmpub": "^3.1.0",
         "npm-run-all": "^3.0.0",
         "nyc": "^8.1.0",
