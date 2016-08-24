@@ -1,4 +1,4 @@
-# Head
+# 10.0.0
 
 - Changed: disable `scss/partial-no-import` rule.
 - Chore(package): add all `peerDependencies` for `eslint-plugin-itgalaxy`.
