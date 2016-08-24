@@ -50,9 +50,9 @@
         "npmpub": "^3.1.0",
         "npm-run-all": "^3.0.0",
         "nyc": "^8.1.0",
-        "remark-cli": "^1.0.0",
-        "remark-lint": "^4.0.0",
-        "remark-lint-config-itgalaxy": "^1.0.0",
+        "remark-cli": "^2.0.0",
+        "remark-lint": "^5.0.0",
+        "remark-preset-lint-itgalaxy": "^1.0.0",
         "rimraf": "^2.5.2",
         "stylelint": "^7.1.0"
     },
@@ -83,6 +83,11 @@
         "require": "babel-register",
         "concurrency": 5,
         "babel": "inherit"
+    },
+    "remarkConfig": {
+        "presets": [
+            "remark-preset-lint-itgalaxy"
+        ]
     },
     "eslintConfig": {
         "rules": {

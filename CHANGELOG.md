@@ -1,6 +1,10 @@
 # Head
 
+- Changed: disable `scss/partial-no-import` rule.
 - Chore(package): add all `peerDependencies` for `eslint-plugin-itgalaxy`.
+- Chore(package): update a minimal version of `remark-cli` from `1.0.0` to `2.0.0`.
+- Chore(package): update a minimal version of `remark-lint` from `4.0.0` to `5.0.0`.
+- Chore(package): use `remark-preset-lint-itgalaxy` instead `remark-lint-config-itgalaxy`.
 
 # 9.0.0
 
