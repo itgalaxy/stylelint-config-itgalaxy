@@ -1,3 +1,7 @@
+# Head
+
+- Chore(package): use `^` instead `~` for `babel-preset-es2015` package.
+
 # 10.0.0
 
 - Changed: disable `scss/partial-no-import` rule.
