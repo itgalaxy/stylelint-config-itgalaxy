@@ -1,6 +1,7 @@
 # Head
 
 - Chore: more informative `README.md`.
+- Chore: use right versions for `eslint-*` plugins.
 
 # 11.0.0
 
