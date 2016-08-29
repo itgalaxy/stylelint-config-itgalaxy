@@ -1,6 +1,7 @@
 # Head
 
 - Chore(package): use `^` instead `~` for `babel-preset-es2015` package.
+- Chore(package): use `^` instead `~` from `babel-preset-stage-0` package.
 
 # 10.0.0
 
