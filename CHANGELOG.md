@@ -1,3 +1,7 @@
+# Head
+
+- Chore: more informative `README.md`.
+
 # 11.0.0
 
 - Added(breaking changes): `declaration-block-no-redundant-longhand-properties` rule.
