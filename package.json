@@ -14,7 +14,8 @@
         "itgalaxy",
         "css",
         "scss",
-        "stylelint"
+        "stylelint",
+        "stylelint-config"
     ],
     "author": "Itgalaxy",
     "license": "MIT",
