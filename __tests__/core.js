@@ -12,12 +12,17 @@ test('test basic properties of config', (t) => {
     t.true(isObject(config.rules), 'rules is object');
 });
 
+// Add test to `@apply`
 const validCss = `@import url("x.css");
 @import url("y.css");
 
 :root {
     --foo-bar: 1px;
     --foo-var: 1em;
+}
+
+.selector-with-composes {
+    composes: red from "./index.css";
 }
 
 /**
@@ -56,6 +61,109 @@ const validCss = `@import url("x.css");
     }
 }
 
+@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+    .selector {
+        color: #fff;
+    }
+}
+
+@media (width >= 500px) and (width <= 1200px) {
+    .selector-media-with-ranges {
+        color: f1f;
+    }
+}
+
+/* or coupled with custom media queries */
+@custom-media --only-medium-screen (width >= 500px) and (width <= 1200px);
+
+@media (--only-medium-screen) {
+    .selector-inside-custom-media-with-ranges {
+        color: #f0f;
+    }
+}
+
+@custom-selector :--button button, .button;
+@custom-selector :--enter :hover, :focus;
+
+:--button {
+    display: inline-block;
+}
+
+:--button:--enter {
+    background-color: #fff;
+}
+
+.selector-nesting {
+    /* direct nesting (& MUST be the first part of selector) */
+    & span {
+        color: #fff;
+    }
+
+    /* @nest rule (for complex nesting) */
+    @nest span & {
+        color: #ff0;
+    }
+
+    /* media query automatic nesting */
+    @media (min-width: 30em) {
+        color: #ccc;
+    }
+}
+
+.selector-color-function {
+    color: color(#fff alpha(-10%));
+}
+
+.selector-color-function:hover {
+    color: color(#fff blackness(80%));
+}
+
+.selector-hbw-function {
+    color: hwb(90, 0%, 0%, 0.5);
+}
+
+.selector-gray-function {
+    color: gray(10%, 50%);
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+div.selector-display-initial {
+    display: initial;
+}
+
+div.selector-all-initial {
+    all: initial;
+}
+
+.selector-with-rem {
+    font-size: 1.5rem;
+}
+
+nav :any-link {
+    background-color: #fff;
+}
+
+.selector-multiple-matches:matches(:first-child, .special) {
+    color: #fff;
+}
+
+.selector-multiple-not:not(:first-child, .special) {
+    color: #fff;
+}
+
+.selector-calc-with-variables {
+    top: calc(var(--foo-bar) + var(--foo-var));
+}
+
+.selector-color-hex-rgba {
+    color: #fffa;
+}
+
 .selector-x {
     width: 10%;
 }
@@ -68,6 +176,14 @@ const validCss = `@import url("x.css");
     width: 30%;
 }
 
+.selector-external-http-background {
+    background-image: url("http://domain.com/background.svg");
+}
+
+.selector-external-https-background {
+    background-image: url("https://domain.com/background.svg");
+}
+
 /* Single-line comment */
 @media (min-width >= 60em) {
     .selector {
@@ -76,7 +192,7 @@ const validCss = `@import url("x.css");
     }
 }
 
-@media (min-orientation: portrait), projection and (color) {
+@media (orientation: portrait), projection and (color) {
     .selector-i + .selector-ii {
         top: 3.24563431px;
         background: color(rgb(0, 0, 0) lightness(50%));
@@ -204,7 +320,7 @@ test(
                 errored,
                 results
             } = data;
-            const {warnings} = results[0];
+            const { warnings } = results[0];
 
             t.true(errored, 'errored');
             t.is(warnings.length, 1, 'flags one warning');

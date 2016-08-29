@@ -120,7 +120,7 @@ test(
                     errored,
                     results
                 } = data;
-                const {warnings} = results[0];
+                const { warnings } = results[0];
 
                 t.true(errored, 'errored');
                 t.is(warnings.length, 1, 'flags one warning');

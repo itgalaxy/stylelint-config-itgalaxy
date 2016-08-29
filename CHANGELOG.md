@@ -1,7 +1,17 @@
-# Head
+# 11.0.0
 
+- Added(breaking changes): `declaration-block-no-redundant-longhand-properties` rule.
+- Added(breaking changes): `function-url-scheme-whitelist` rule.
+- Added(breaking changes): `media-feature-name-no-unknown` rule.
+- Added(breaking changes): `selector-descendant-combinator-no-non-space` rule.
+- Added(breaking changes): `value-list-max-empty-lines` rule.
+- Added: `composes` to `ignoreProperties` in `property-no-unknown` rule.
 - Chore(package): use `^` instead `~` for `babel-preset-es2015` package.
 - Chore(package): use `^` instead `~` from `babel-preset-stage-0` package.
+- Chore(package): update a minimal version of `eslint-plugin-itgalaxy` from `11.0.0` to `13.0.0`.
+- Chore(package): update a minimal version of `stylelint` from `7.1.0` to `7.2.0`.
+- Chore: improve tests.
+- Fixed: `color-named` now ignores `composes` properties.
 
 # 10.0.0
 
@@ -18,7 +28,7 @@
 - Chore(major update): merge package `stylelint-config-itgalaxy` with `stylelint-config-itgalaxy-scss`.
 - Chore: use `Object.assign` instead `merge` package.
 - Chore: `devDependencies` and `peerDependencies` now have equals version of packages.
-- Deps: update the minimal version of `npm-run-all` from `2.3.0` to `3.0.0`.
+- Chore(package): update the minimal version of `npm-run-all` from `2.3.0` to `3.0.0`.
 - Fixed: add `content` to `ignoreAtRules` in `at-rule-no-unknown` rule in `scss` preset.
 
 # 8.0.0
@@ -27,11 +37,11 @@
 
 # 7.0.0
 
-- Added: `block-closing-brace-empty-line-before` rule.
-- Added: `comment-no-empty` rule.
-- Added: `custom-property-empty-line-before` rule.
-- Added: `declaration-empty-line-before` rule.
-- Added: `media-feature-name-case` rule.
+- Added(breaking changes): `block-closing-brace-empty-line-before` rule.
+- Added(breaking changes): `comment-no-empty` rule.
+- Added(breaking changes): `custom-property-empty-line-before` rule.
+- Added(breaking changes): `declaration-empty-line-before` rule.
+- Added(breaking changes): `media-feature-name-case` rule.
 - Changed: use option `blockless-after-same-name-blockless` instead `blockless-group` from `except` in `at-rule-empty-line-before` rule.
 - Chore: add rule `selector-nested-pattern` for tracking.
 - Chore: add rule `selector-pseudo-class-blacklist` for tracking.
@@ -45,10 +55,10 @@
 
 # 5.0.0
 
+- Added(breaking changes): `property-no-unknown` rule.
 - Chore(package)(breaking changes): update version `stylelint` to `7.0.0`.
 - Changed: rename `no-missing-eof-newline` to `no-missing-end-of-source-newline`.
 - Changed: rename `media-query-parentheses-space-inside` to `media-feature-parentheses-space-inside`.
-- Added: `property-no-unknown` rule.
 
 # 4.0.0
 
@@ -56,8 +66,8 @@
 
 # 3.0.0
 
-- Added: `function-url-no-scheme-relative` rule.
-- Added: `selector-attribute-quotes` rule.
+- Added(breaking changes): `function-url-no-scheme-relative` rule.
+- Added(breaking changes): `selector-attribute-quotes` rule.
 
 # 2.1.2
 
@@ -69,8 +79,8 @@
 
 # 2.1.0
 
-- Added: new rule `at-rule-no-unknown`.
-- Added: new rule `no-empty-source`.
+- Added(breaking changes): new rule `at-rule-no-unknown`.
+- Added(breaking changes): new rule `no-empty-source`.
 
 # 2.0.0
 
