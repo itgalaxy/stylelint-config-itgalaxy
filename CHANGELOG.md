@@ -2,6 +2,7 @@
 
 - Chore: more informative `README.md`.
 - Chore: use right versions for `eslint-*` plugins.
+- Chore: fix link `dependecies` and `devDependencies` badges.
 
 # 11.0.0
 
