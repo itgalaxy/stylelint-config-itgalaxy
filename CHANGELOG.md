@@ -1,8 +1,16 @@
-# Head
+# 12.0.0 - September 21, 20016
 
-- Chore: more informative `README.md`.
+- Chore: improve `README.md`.
 - Chore: use right versions for `eslint-*` plugins.
 - Chore: fix link `dependecies` and `devDependencies` badges.
+- Chore(package): update a minimal version of `eslint` from `3.4.0` to `3.5.0`.
+- Chore(package): update a minimal version of `eslint-plugin-import` from `14.0.0` to `15.0.0`.
+- Chore(package): update a minimal version of `eslint-plugin-itgalaxy` from `13.0.0` to `18.0.0`.
+- Chore(package): update a minimal version of `eslint-plugin-react ` from `6.2.0` to `6.3.0`.
+- Chore(package): update a minimal version of `eslint-plugin-xo` from `0.5.0` to `1.0.0`.
+- Chore(package): update a minimal version of `npm-run-all` from `3.0.0` to `3.1.0`.
+- Chore(package): update a minimal version of `nyc` from `8.1.0` to `8.3.0`.
+- Chore(package)(breaking changes): update a minimal version of `stylelint` from `7.2.0` to `7.3.1`. Version `7.3.0` is buggy. 
 
 # 11.0.0
 
@@ -103,4 +111,4 @@
 
 # 1.0.0
 
-- Initial release.
+- Initial public release.
