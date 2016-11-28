@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 16.0.0 - 2016-11-28
 
 - Added **(Major update)**: `transition-property` with `all` value in `declaration-property-value-blacklist` rule. 
 - Changed: `block-no-single-line` rule now have `null` option.

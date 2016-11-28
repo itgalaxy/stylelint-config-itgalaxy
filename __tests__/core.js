@@ -87,6 +87,7 @@ const validCss = `@import url("x.css");
 @custom-selector :--button button, .button;
 @custom-selector :--enter :hover, :focus;
 
+/*
 :--button {
     display: inline-block;
 }
@@ -94,6 +95,7 @@ const validCss = `@import url("x.css");
 :--button:--enter {
     background-color: #fff;
 }
+*/
 
 .selector-nesting {
     /* direct nesting (& MUST be the first part of selector) */
