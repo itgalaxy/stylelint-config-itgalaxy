@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Added **(Major update)**: `transition-property` with `all` value in `declaration-property-value-blacklist` rule. 
+- Changed: `block-no-single-line` rule now have `null` option.
+- Changed: `block-opening-brace-newline-after` rule now have `always` option.
+- Changed: `block-opening-brace-space-after` rule now have `null` option.
+- Changed: `declaration-block-semicolon-newline-after` rule now have `always` option.
+- Changed: `declaration-block-semicolon-space-after` rule now have `null` option.
+- Changed: `declaration-block-single-line-max-declarations` rule now have `null` option.
+- Chore: minimum required `eslint` version is now `^3.11.0`.
+- Chore: minimum required `eslint-plugin-itgalaxy` version is now `^31.0.0`.
+- Chore: minimum required `nyc` version is now `^10.0.0`.
+
 # 15.0.0 - 2016-11-21
 
 - Added **(Major update)**: `font-family-no-duplicate-names` rule.
