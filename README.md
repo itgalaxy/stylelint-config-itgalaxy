@@ -4,14 +4,15 @@
 [![Travis Build Status](https://img.shields.io/travis/itgalaxy/stylelint-config-itgalaxy/master.svg?label=build)](https://travis-ci.org/itgalaxy/stylelint-config-itgalaxy) 
 [![dependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy) 
 [![devDependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/dev-status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy?type=dev)
+[![peerDependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/peer-status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy?type=peer)
 
 > itgalaxy org's shareable config for stylelint (`css` and `scss`).
 
-For consistent `css` and `scss` code across itgalaxy's repos.
+For consistent `css` and `scss` code across itgalaxy's repositories.
 
 ## Installation
 
-```bash
+```shell
 npm install stylelint-config-itgalaxy
 ```
 
@@ -51,17 +52,17 @@ change the `property-no-unknown` rule to use its `ignoreAtRules` option and add 
 
 ```json
 {
-  "extends": "stylelint-config-itgalaxy",
-  "rules": {
-    "indentation": "tab",
-    "number-leading-zero": null,
-    "property-no-unknown": [ true, {
-      "ignoreProperties": [
-        "composes"
-      ]
-    }],
-    "unit-whitelist": ["em", "rem", "s"]
-  }
+    "extends": "stylelint-config-itgalaxy",
+    "rules": {
+        "indentation": "tab",
+        "number-leading-zero": null,
+        "property-no-unknown": [ true, {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }],
+        "unit-whitelist": ["em", "rem", "s"]
+    }
 }
 ```
 
