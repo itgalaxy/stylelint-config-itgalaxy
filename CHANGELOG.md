@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# 17.0.0 - 2016-12-12
+
+- Added **(Major update)**: `scss/at-else-closing-brace-newline-after` rule.
+- Added **(Major update)**: `scss/at-if-closing-brace-newline-after` rule.
+- Added **(Major update)**: `scss/at-if-closing-brace-space-after` rule.
+- Chore: minimum required `eslint` version is now `^3.12.0`.
+- Chore: minimum required `eslint-plugin-itgalaxy` version is now `^33.0.0`.
+- Chore: minimum required `eslint-plugin-react ` version is now `^6.8.0`.
+
 # 16.0.0 - 2016-11-28
 
 - Added **(Major update)**: `transition-property` with `all` value in `declaration-property-value-blacklist` rule. 

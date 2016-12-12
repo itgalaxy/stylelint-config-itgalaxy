@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy",
-    "version": "16.0.0",
+    "version": "17.0.0",
     "description": "A mostly reasonable approach to CSS and SCSS.",
     "repository": {
         "type": "git",
@@ -39,15 +39,15 @@
         "babel-preset-es2015": "^6.13.0",
         "babel-preset-stage-0": "^6.5.0",
         "babel-register": "^6.9.0",
-        "eslint": "^3.11.0",
+        "eslint": "^3.12.0",
         "eslint-plugin-ava": "^4.0.0",
         "eslint-plugin-import": "^2.2.0",
-        "eslint-plugin-itgalaxy": "^30.0.0",
+        "eslint-plugin-itgalaxy": "^33.0.0",
         "eslint-plugin-jsx-a11y": "^3.0.0",
         "eslint-plugin-lodash": "^2.2.0",
         "eslint-plugin-node": "^3.0.0",
         "eslint-plugin-promise": "^3.4.0",
-        "eslint-plugin-react": "^6.7.0",
+        "eslint-plugin-react": "^6.8.0",
         "eslint-plugin-unicorn": "^1.0.0",
         "npmpub": "^3.1.0",
         "npm-run-all": "^3.1.0",
@@ -61,7 +61,7 @@
     },
     "peerDependencies": {
         "stylelint": "^7.6.0",
-        "stylelint-scss": "^1.3.0"
+        "stylelint-scss": "^1.4.0"
     },
     "scripts": {
         "coveralls": "nyc report --reporter=text-lcov | coveralls",
@@ -97,6 +97,7 @@
         "rules": {
             "strict": "off",
             "quote-props": "off",
+            "sort-keys": "off",
 
             "import/no-commonjs": "off"
         },
