@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Chore **(Major update)**: minimum required `stylelint` version is now `^7.7.0`.
+
 # 18.0.0 - 2016-12-12
 
 - Added **(Major update)**: `scss/declaration-nested-properties` rule.
