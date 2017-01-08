@@ -290,16 +290,11 @@ test(
                 errored,
                 results
             } = data;
-            const {
-                deprecations,
-                invalidOptionWarnings,
-                warnings
-            } = results[0];
 
             t.false(errored, 'no errored');
-            t.is(deprecations.length, 0, 'flags no deprecations');
-            t.is(invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
-            t.is(warnings.length, 0, 'flags no warnings');
+            t.is(results[0].deprecations.length, 0, 'flags no deprecations');
+            t.is(results[0].invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
+            t.is(results[0].warnings.length, 0, 'flags no warnings');
 
             return true;
         })
@@ -322,11 +317,10 @@ test(
                 errored,
                 results
             } = data;
-            const { warnings } = results[0];
 
             t.true(errored, 'errored');
-            t.is(warnings.length, 1, 'flags one warning');
-            t.is(warnings[0].text, 'Expected a leading zero (number-leading-zero)', 'correct warning text');
+            t.is(results[0].warnings.length, 1, 'flags one warning');
+            t.is(results[0].warnings[0].text, 'Expected a leading zero (number-leading-zero)', 'correct warning text');
 
             return false;
         })
