@@ -6,9 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
+- Added **(Major update)**: `order/declaration-block-properties-specified-order` rule.
 - Added **(Major update)**: `rule-empty-line-before` rule.
 - Added **(Major update)**: `time-min-milliseconds` rule.
 - Added **(Major update)**: `after-same-name` in `except` option into `at-rule-empty-line-before` rule.
+- Chore **(Major update)**: minimum required `stylelint` version is now `^7.8.0`.
+- Fixed: removed `stylelint-scss` from `dependencies`.
 - Removed **(Major update)**: `block-no-single-line` rule.
 - Removed **(Major update)**: `time-no-imperceptible` rule.
 - Removed **(Major update)**: `no-browser-hacks` rule.
@@ -19,7 +22,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed **(Major update)**: `selector-root-no-composition` rule.
 - Removed **(Major update)**: `media-feature-no-missing-punctuation` rule.
 - Removed **(Major update)**: `selector-no-empty` rule.
-- Chore **(Major update)**: minimum required `stylelint` version is now `^7.8.0`.
+- Removed **(Major update)**: `declaration-block-properties-order` rule.
+
 
 # 19.0.0 - 2016-12-20
 
