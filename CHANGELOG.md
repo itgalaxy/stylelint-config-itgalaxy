@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Added **(Major update)**: `rule-empty-line-before` rule.
+- Added **(Major update)**: `time-min-milliseconds` rule.
+- Added **(Major update)**: `after-same-name` in `except` option into `at-rule-empty-line-before` rule.
+- Removed **(Major update)**: `block-no-single-line` rule.
+- Removed **(Major update)**: `time-no-imperceptible` rule.
+- Removed **(Major update)**: `no-browser-hacks` rule.
+- Removed **(Major update)**: `no-indistinguishable-colors` rule.
+- Removed **(Major update)**: `no-unsupported-browser-features` rule.
+- Removed **(Major update)**: `custom-property-no-outside-root` rule.
+- Removed **(Major update)**: `root-no-standard-properties` rule.
+- Removed **(Major update)**: `selector-root-no-composition` rule.
+- Removed **(Major update)**: `media-feature-no-missing-punctuation` rule.
+- Removed **(Major update)**: `selector-no-empty` rule.
+- Chore **(Major update)**: minimum required `stylelint` version is now `^7.8.0`.
+
 # 19.0.0 - 2016-12-20
 
 - Chore **(Major update)**: minimum required `stylelint` version is now `^7.7.0`.

@@ -91,7 +91,7 @@ test(
                 } = data;
 
                 t.false(errored, 'no errored');
-                t.is(results[0].deprecations.length, 0, 'flags no deprecations');
+                t.is(results[0].deprecations.length, 3, 'flags no deprecations');
                 t.is(results[0].invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
                 t.is(results[0].warnings.length, 0, 'flags no warnings');
 
