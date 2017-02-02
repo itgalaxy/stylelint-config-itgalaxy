@@ -26,6 +26,7 @@
         "lib",
         "core.js",
         "index.js",
+        "order.js",
         "scss.js"
     ],
     "devDependencies": {
