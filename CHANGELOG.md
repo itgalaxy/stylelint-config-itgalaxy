@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 20.0.0 - 2017-02-02
 
 - Added **(Major update)**: `order/declaration-block-properties-specified-order` rule.
 - Added **(Major update)**: `rule-empty-line-before` rule.
@@ -23,7 +23,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed **(Major update)**: `media-feature-no-missing-punctuation` rule.
 - Removed **(Major update)**: `selector-no-empty` rule.
 - Removed **(Major update)**: `declaration-block-properties-order` rule.
-
 
 # 19.0.0 - 2016-12-20
 
