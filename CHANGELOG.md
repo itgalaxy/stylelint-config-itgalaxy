@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 21.0.0 - 2017-02-11
 
 - Changed: moved `stylelint-order` rules to `core` preset.
 - Changed: set `resolveNestedSelectors` to `true` in `selector-class-pattern` rule.
