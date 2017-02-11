@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changed: deleted characters length limit from `scss/at-function-pattern`.
 - Changed: deleted characters length limit from `scss/at-mixin-pattern`.
 - Changed: deleted characters length limit from `scss/dollar-variable-pattern`.
+- Changed: deleted characters length limit from `scss/percent-placeholder-pattern`.
 
 # 21.0.0 - 2017-02-11
 
