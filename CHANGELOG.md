@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changed: deleted characters length limit from `custom-property-pattern`.
 - Changed: deleted characters length limit from `selector-class-pattern`.
 - Changed: deleted characters length limit from `selector-id-pattern`.
+- Changed: deleted characters length limit from `scss/at-function-pattern`.
 
 # 21.0.0 - 2017-02-11
 
