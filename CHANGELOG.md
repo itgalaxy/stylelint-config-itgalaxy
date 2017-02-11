@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 22.0.0 - 2017-02-11
 
 - Changed: deleted characters length limit from `custom-media-pattern`.
 - Changed: deleted characters length limit from `custom-property-pattern`.
