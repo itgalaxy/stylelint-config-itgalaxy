@@ -6,10 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
-- Changed: changed pattern for `scss/at-function-pattern`.
-- Changed: changed pattern for `scss/at-mixin-pattern`.
-- Changed: changed pattern for `scss/dollar-variable-pattern`.
-- Changed: changed pattern for `scss/percent-placeholder-pattern`.
+- Changed: pattern for `scss/at-function-pattern`.
+- Changed: pattern for `scss/at-mixin-pattern`.
+- Changed: pattern for `scss/dollar-variable-pattern`.
+- Changed: pattern for `scss/percent-placeholder-pattern`.
+- Changed: pattern for `custom-media-pattern`.
+- Changed: pattern for `custom-property-pattern`.
+- Changed: pattern for `selector-id-pattern`.
+- Changed: pattern for `selector-class-pattern`.
 
 # 23.0.0 - 2017-02-20
 

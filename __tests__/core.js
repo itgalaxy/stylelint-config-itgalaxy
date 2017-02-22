@@ -279,6 +279,25 @@ nav :any-link {
 }
 /* stylelint-enable block-no-empty */
 
+.very-complex-selector {
+    @apply --foo-theme;
+    @apply --bar-theme;
+    display: block;
+    font-size: 14px;
+
+    @media (--small-viewport) {
+        width: var(--width);
+        color: var(--color);
+    }
+
+    & span {
+        display: block;
+    }
+
+    @nest span & {
+        display: inline-block;
+    }
+}
 `;
 
 test(
