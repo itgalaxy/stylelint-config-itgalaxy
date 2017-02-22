@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Changed: changed pattern for `scss/at-function-pattern`.
+- Changed: changed pattern for `scss/at-mixin-pattern`.
+- Changed: changed pattern for `scss/dollar-variable-pattern`.
+- Changed: changed pattern for `scss/percent-placeholder-pattern`.
+
 # 23.0.0 - 2017-02-20
 
 - Chore **(Major update)**: minimum required `stylelint` version is now `^7.9.0`.
