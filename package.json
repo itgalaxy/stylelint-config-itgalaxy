@@ -51,9 +51,8 @@
         "npm-run-all": "^4.0.0",
         "nyc": "^10.0.0",
         "package-schema": "^1.0.0",
-        "remark-cli": "^2.0.0",
-        "remark-lint": "^5.0.0",
-        "remark-preset-lint-itgalaxy": "^4.0.0",
+        "remark-cli": "^3.0.0",
+        "remark-preset-lint-itgalaxy": "^5.0.0",
         "rimraf": "^2.5.2",
         "stylelint": "^7.9.0",
         "stylelint-order": "^0.3.0",
@@ -69,7 +68,7 @@
 
         "lint:eslint": "eslint . --ignore-path .gitignore",
         "lint:package": "ajv -s ./node_modules/package-schema/schema.json -d package --errors=text",
-        "lint:remark": "remark '{**/*,*}.md' -i .gitignore -f -q",
+        "lint:remark": "remark . -i .gitignore -f -q",
         "lint": "npm-run-all -l -p lint:**",
 
         "ava": "nyc ava --verbose '**/__tests__/*.js'",
@@ -90,7 +89,7 @@
         "babel": "inherit"
     },
     "remarkConfig": {
-        "presets": [
+        "plugins": [
             "remark-preset-lint-itgalaxy"
         ]
     },
