@@ -200,8 +200,8 @@ nav :any-link {
     .selector-i + .selector-ii {
         top: 3.24563431px;
         background: color(rgb(0, 0, 0) lightness(50%));
-        font-family: Arial, helvetica, "arial black", "sake_case_font", "MyFontVersion6", sans-serif;
         font-weight: lighter;
+        font-family: Arial, helvetica, "arial black", "sake_case_font", "MyFontVersion6", sans-serif;
     }
 }
 
