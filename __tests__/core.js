@@ -33,10 +33,10 @@ const validCss = `@charset "UTF-8";
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-    display: block !important;
     box-sizing: border-box;
-    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+    display: block !important;
     color: #333;
+    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
     font-weight: 700;
 }
 
@@ -53,8 +53,8 @@ const validCss = `@charset "UTF-8";
 .selector-a,
 .selector-b:not(:first-child) {
     top: calc(calc(1em * 2) / 3);
-    animation: slip-n-slide 150ms linear;
     padding: 10px !important;
+    animation: slip-n-slide 150ms linear;
 
     @media print {
         body {
@@ -210,12 +210,12 @@ nav :any-link {
     screen and (min-resolution: 2dppx) {
     /* Comment here */
     .selector {
-        margin: 10px;
-        margin-bottom: 5px;
         box-shadow:
             0 1px 1px #000,
             0 1px 0 #fff,
             2px 2px 1px 1px #ccc inset;
+        margin: 10px;
+        margin-bottom: 5px;
         background-image:
             repeating-linear-gradient(
                 -45deg,
@@ -228,8 +228,8 @@ nav :any-link {
 
     /* Flush nested single line comment */
     .selector::after {
-        background-image: url("x.svg");
         content: "→";
+        background-image: url("x.svg");
     }
 }
 
@@ -286,8 +286,8 @@ nav :any-link {
     font-size: 14px;
 
     @media (--small-viewport) {
-        width: var(--width);
         color: var(--color);
+        width: var(--width);
     }
 
     & span {

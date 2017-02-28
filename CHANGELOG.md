@@ -4,16 +4,20 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Changed: properties order in `order/declaration-block-properties-specified-order`.
+
 # 24.0.0 -2017-02-22
 
-- Changed: pattern for `scss/at-function-pattern`.
-- Changed: pattern for `scss/at-mixin-pattern`.
-- Changed: pattern for `scss/dollar-variable-pattern`.
-- Changed: pattern for `scss/percent-placeholder-pattern`.
-- Changed: pattern for `custom-media-pattern`.
-- Changed: pattern for `custom-property-pattern`.
-- Changed: pattern for `selector-id-pattern`.
-- Changed: pattern for `selector-class-pattern`.
+- Changed: pattern in `scss/at-function-pattern`.
+- Changed: pattern in `scss/at-mixin-pattern`.
+- Changed: pattern in `scss/dollar-variable-pattern`.
+- Changed: pattern in `scss/percent-placeholder-pattern`.
+- Changed: pattern in `custom-media-pattern`.
+- Changed: pattern in `custom-property-pattern`.
+- Changed: pattern in `selector-id-pattern`.
+- Changed: pattern in `selector-class-pattern`.
 
 # 23.0.0 - 2017-02-20
 
