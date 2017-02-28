@@ -4,11 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 25.0.0 - 2017-02-28
 
 - Changed: properties order in `order/declaration-block-properties-specified-order`.
 
-# 24.0.0 -2017-02-22
+# 24.0.0 - 2017-02-22
 
 - Changed: pattern in `scss/at-function-pattern`.
 - Changed: pattern in `scss/at-mixin-pattern`.
