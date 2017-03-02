@@ -208,12 +208,7 @@ nav :any-link {
     screen and (min-resolution: 2dppx) {
     /* Comment here */
     .selector {
-        margin: 10px;
-        margin-bottom: 5px;
-        box-shadow:
-            0 1px 1px #000,
-            0 1px 0 #fff,
-            2px 2px 1px 1px #ccc inset;
+        height: 10rem;
         background-image:
             repeating-linear-gradient(
                 -45deg,
@@ -221,7 +216,12 @@ nav :any-link {
                 #fff 25px,
                 rgba(255, 255, 255, 1) 50px
             );
-        height: 10rem;
+        box-shadow:
+            0 1px 1px #000,
+            0 1px 0 #fff,
+            2px 2px 1px 1px #ccc inset;
+        margin: 10px;
+        margin-bottom: 5px;
     }
 
     /* Flush nested single line comment */
@@ -284,8 +284,8 @@ nav :any-link {
     font-size: 14px;
 
     @media (--small-viewport) {
-        color: var(--color);
         width: var(--width);
+        color: var(--color);
     }
 
     & span {
