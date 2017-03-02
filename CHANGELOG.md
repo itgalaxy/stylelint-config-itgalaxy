@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# 27.0.0 - 2017-03-02
+
+- Changed: properties order in `order/declaration-block-properties-specified-order`.
+
 # 26.0.0 - 2017-03-02
 
 - Changed: set option `unspecified` to `ignore` in `order/declaration-block-properties-specified-order`.
