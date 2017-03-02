@@ -1,6 +1,4 @@
-/* eslint-disable import/default */
 import config from '../index';
-/* eslint-enable import/default */
 import stylelint from 'stylelint';
 import test from 'ava';
 
@@ -210,12 +208,12 @@ nav :any-link {
     screen and (min-resolution: 2dppx) {
     /* Comment here */
     .selector {
+        margin: 10px;
+        margin-bottom: 5px;
         box-shadow:
             0 1px 1px #000,
             0 1px 0 #fff,
             2px 2px 1px 1px #ccc inset;
-        margin: 10px;
-        margin-bottom: 5px;
         background-image:
             repeating-linear-gradient(
                 -45deg,

@@ -2,7 +2,6 @@
 
 [![NPM version](https://img.shields.io/npm/v/stylelint-config-itgalaxy.svg)](https://www.npmjs.org/package/stylelint-config-itgalaxy) 
 [![Travis Build Status](https://img.shields.io/travis/itgalaxy/stylelint-config-itgalaxy/master.svg?label=build)](https://travis-ci.org/itgalaxy/stylelint-config-itgalaxy) 
-[![dependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy) 
 [![devDependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/dev-status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy?type=dev)
 [![peerDependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/peer-status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy?type=peer)
 

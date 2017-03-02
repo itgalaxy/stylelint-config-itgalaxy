@@ -1,4 +1,4 @@
-import config from '../scss'; // eslint-disable-line import/default
+import config from '../scss';
 import stylelint from 'stylelint';
 import test from 'ava';
 
