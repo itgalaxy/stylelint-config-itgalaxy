@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+- Changed: properties order in `order/declaration-block-properties-specified-order`.
+
 # 28.0.0 - 2017-03-03
 
 - Changed: properties order in `order/declaration-block-properties-specified-order`.
