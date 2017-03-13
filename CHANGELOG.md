@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+-   Chore **(Major update)**: minimum required `stylelint-order` version is now `^0.4.0`.
+
 # 29.0.0 - 2017-03-03
 
 -   Changed: properties order in `order/declaration-block-properties-specified-order`.
@@ -142,7 +146,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 -   Added **(Major update)**: rule `media-feature-name-blacklist`.
 
 -   Chore **(Major upgrade)**: minimum required `stylelint` version is now `^7.3.1`. 
-  Version `7.4.0`, `7.4.1` is buggy.
+    Version `7.4.0`, `7.4.1` is buggy.
 
 -   Chore: minimum required `remark-preset-lint-itgalaxy` version is now `^1.0.0`.
 
@@ -181,7 +185,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 -   Chore: minimum required `nyc` version is now `^8.1.0`.
 
 -   Chore **(Major update)**: minimum required `stylelint` version is now `^7.2.0`. 
-  Version `7.3.0` is buggy. 
+    Version `7.3.0` is buggy. 
 
 # 11.0.0
 
@@ -219,7 +223,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 # 8.0.0
 
 -   Changed(revert): use option `blockless-group` instead `blockless-after-same-name-blockless` from `except` 
-  in `at-rule-empty-line-before` rule.
+    in `at-rule-empty-line-before` rule.
 
 # 7.0.0
 
@@ -234,7 +238,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 -   Added **(Major update)**: `media-feature-name-case` rule.
 
 -   Changed: use option `blockless-after-same-name-blockless` instead `blockless-group` from `except` 
-  in `at-rule-empty-line-before` rule.
+    in `at-rule-empty-line-before` rule.
 
 -   Chore: add rule `selector-nested-pattern` for tracking.
 
