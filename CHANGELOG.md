@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 31.0.0 - 2017-04-04
 
 -   Added **(Major update)**: `at-rule-semicolon-space-before` rule.
 -   Chore **(Major update)**: minimum required `stylelint` version is now `^7.10.0`.
