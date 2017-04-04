@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
+-   Added **(Major update)**: `at-rule-semicolon-space-before` rule.
 -   Chore **(Major update)**: minimum required `stylelint` version is now `^7.10.0`.
 
 # 30.0.0 - 2017-03-13
