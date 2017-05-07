@@ -1,5 +1,7 @@
 # stylelint-config-itgalaxy
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/itgalaxy/stylelint-config-itgalaxy.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/stylelint-config-itgalaxy.svg)](https://www.npmjs.org/package/stylelint-config-itgalaxy) 
 [![Travis Build Status](https://img.shields.io/travis/itgalaxy/stylelint-config-itgalaxy/master.svg?label=build)](https://travis-ci.org/itgalaxy/stylelint-config-itgalaxy) 
 [![devDependencies Status](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy/dev-status.svg)](https://david-dm.org/itgalaxy/stylelint-config-itgalaxy?type=dev)
