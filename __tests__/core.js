@@ -6,7 +6,7 @@ function isObject(obj) {
     return typeof obj === 'object' && obj !== null;
 }
 
-test('test basic properties of config', (t) => {
+test('test basic properties of config', t => {
     t.true(isObject(config.rules), 'rules is object');
 });
 
@@ -298,26 +298,26 @@ nav :any-link {
 }
 `;
 
-test(
-    'no warnings, deprecations and invalid options with valid css',
-    (t) => stylelint.lint({
-        code: validCss,
-        config
-    })
-        .then((data) => {
-            const {
-                errored,
-                results
-            } = data;
+test('no warnings, deprecations and invalid options with valid css', t =>
+    stylelint
+        .lint({
+            code: validCss,
+            config
+        })
+        .then(data => {
+            const { errored, results } = data;
 
             t.false(errored, 'no errored');
             t.is(results[0].deprecations.length, 1, 'flags no deprecations');
-            t.is(results[0].invalidOptionWarnings.length, 0, 'flags no invalid option warnings');
+            t.is(
+                results[0].invalidOptionWarnings.length,
+                0,
+                'flags no invalid option warnings'
+            );
             t.is(results[0].warnings.length, 0, 'flags no warnings');
 
             return true;
-        })
-);
+        }));
 
 const invalidCss = `a {
     top: .2em;
@@ -325,22 +325,22 @@ const invalidCss = `a {
 
 `;
 
-test(
-    'a warning with invalid css',
-    (t) => stylelint.lint({
-        code: invalidCss,
-        config
-    })
-        .then((data) => {
-            const {
-                errored,
-                results
-            } = data;
+test('a warning with invalid css', t =>
+    stylelint
+        .lint({
+            code: invalidCss,
+            config
+        })
+        .then(data => {
+            const { errored, results } = data;
 
             t.true(errored, 'errored');
             t.is(results[0].warnings.length, 1, 'flags one warning');
-            t.is(results[0].warnings[0].text, 'Expected a leading zero (number-leading-zero)', 'correct warning text');
+            t.is(
+                results[0].warnings[0].text,
+                'Expected a leading zero (number-leading-zero)',
+                'correct warning text'
+            );
 
             return false;
-        })
-);
+        }));
