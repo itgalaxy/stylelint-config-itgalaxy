@@ -60,13 +60,13 @@
         "remark-preset-lint-itgalaxy": "^6.0.0",
         "rimraf": "^2.5.2",
         "stylelint": "^7.11.0",
-        "stylelint-order": "^0.4.0",
+        "stylelint-order": "^0.5.0",
         "stylelint-scss": "^1.4.1"
     },
     "peerDependencies": {
         "stylelint": "^7.10.0",
         "stylelint-scss": "^1.4.1",
-        "stylelint-order": "^0.4.0"
+        "stylelint-order": "^0.5.0"
     },
     "scripts": {
         "precommit": "lint-staged",
