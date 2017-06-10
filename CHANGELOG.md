@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 33.0.0 - 2017-06-10
 
 -   Chore **(Major update)**: minimum required `stylelint-order` version is now `^0.5.0`.
 -   Chore **(Major update)**: minimum required `stylelint` version is now `^7.11.0`.
