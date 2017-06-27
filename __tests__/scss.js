@@ -1,6 +1,11 @@
 import config from '../scss';
+import fs from 'fs';
+import path from 'path';
+import pify from 'pify';
 import stylelint from 'stylelint';
 import test from 'ava';
+
+const fixturesDir = path.resolve(process.cwd(), '__tests__/fixtures');
 
 function isObject(obj) {
     return typeof obj === 'object' && obj !== null;
@@ -12,91 +17,35 @@ test('test basic properties of config', t => {
     t.true(config.plugins.indexOf('stylelint-scss') !== -1);
 });
 
-const validScss = `
-@import "file";
-@import "_path/to/file";
-@import "some.css";
-
-// Variables
-$variable: 10px;
-$box-shadow:
-    0 0 0 1px #5b9dd9,
-    0 0 2px 1px rgba(30, 140, 190, 0.8);
-$sum: 10px + 10px;
-$sum:
-    100px + 100px + 100px + 100px + 100px + 100px
-    - 8000px * 2px / 4px;
-
-@function my-calculation-function($some-number, $another-number) {
-    @return $some-number + $another-number;
-}
-
-@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-    box-shadow: $top $left $blur $color unquote($inset);
-}
-
-%some-placeholder {
-    display: flex;
-}
-
-.class-one {
-    &.foo {
-        display: block; // Inline-comment
-    }
-
-    .foo > & {
-        display: block;
-    }
-}
-
-.class-two {
-    &,
-    .foo,
-    .bar {
-        margin: 0;
-    }
-}
-
-.class-three {
-    + .foo {
-        display: block;
-    }
-}
-
-.class-with-mixin {
-    @include mixin-name();
-    width: 10px * 10;
-}
-`;
-
-const invalidScss = `
-@import "path/to/file.scss"
-
-`;
-
 test('no warnings, deprecations and invalid options with valid scss', t => {
     config.rules['scss/partial-no-import'] = null;
 
-    return stylelint
-        .lint({
-            code: validScss,
-            config,
-            syntax: 'scss'
-        })
-        .then(data => {
-            const { errored, results } = data;
+    return pify(fs.readFile)(path.join(fixturesDir, 'bar.scss')).then(code =>
+        stylelint
+            .lint({
+                code: code.toString(),
+                config,
+                syntax: 'scss'
+            })
+            .then(data => {
+                const { errored, results } = data;
 
-            t.false(errored, 'no errored');
-            t.is(results[0].deprecations.length, 1, 'flags no deprecations');
-            t.is(
-                results[0].invalidOptionWarnings.length,
-                0,
-                'flags no invalid option warnings'
-            );
-            t.is(results[0].warnings.length, 0, 'flags no warnings');
+                t.false(errored, 'no errored');
+                t.is(
+                    results[0].deprecations.length,
+                    1,
+                    'flags no deprecations'
+                );
+                t.is(
+                    results[0].invalidOptionWarnings.length,
+                    0,
+                    'flags no invalid option warnings'
+                );
+                t.is(results[0].warnings.length, 0, 'flags no warnings');
 
-            return true;
-        });
+                return true;
+            })
+    );
 });
 
 test('a warning with invalid scss', t => {
@@ -104,7 +53,7 @@ test('a warning with invalid scss', t => {
 
     return stylelint
         .lint({
-            code: invalidScss,
+            code: ['@import "path/to/file.scss"', '\n'].join('\n'),
             config,
             syntax: 'scss'
         })

@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./core');
+module.exports = require('./lib/config/core');

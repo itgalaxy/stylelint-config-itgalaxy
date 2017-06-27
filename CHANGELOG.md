@@ -4,9 +4,17 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 34.0.0 - 2017-06-27
 
+-   Added **(Major update)**: `selector-max-id` rule.
+-   Added **(Major update)**: `selector-max-universal` rule.
 -   Added **(Major update)**: `break-inside` property in `order/properties-order` rule.
+-   Added **(Major update)**: `css` preset.
+-   Chore **(Major update)**: minimum required `stylelint` version is now `^7.12.0`.
+-   Removed **(Major update)**: `core` preset (using for build-in purpose).
+-   Removed **(Major update)**: `selector-no-universal` rule in favor `selector-max-universal`.
+-   Removed **(Major update)**: `selector-max-compound-selectors`.
+-   Removed **(Major update)**: `selector-no-qualifying-type` rule.
 
 # 33.0.0 - 2017-06-10
 

@@ -1,4 +1,4 @@
-import config from '../index';
+import config from '../css';
 import fs from 'fs';
 import path from 'path';
 import pify from 'pify';
@@ -7,14 +7,12 @@ import test from 'ava';
 
 const fixturesDir = path.resolve(process.cwd(), '__tests__/fixtures');
 
-function isObject(obj) {
-    return typeof obj === 'object' && obj !== null;
-}
-
 test('test basic properties of config', t => {
-    t.true(isObject(config.rules), 'rules is object');
-    t.true(isObject(config.plugins), 'rules is plugins');
-    t.true(config.plugins.indexOf('stylelint-order') !== -1);
+    t.deepEqual(
+        config.extends,
+        [path.resolve(process.cwd(), 'lib/config/core.js')],
+        'extend core preset'
+    );
 });
 
 test('no warnings, deprecations and invalid options with valid css', t =>

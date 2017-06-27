@@ -20,9 +20,11 @@ npm install stylelint-config-itgalaxy
 
 If you've installed `stylelint-config-itgalaxy` locally within your project, just set your `stylelint` config to:
 
+For `css` use:
+
 ```json
 {
-  "extends": "stylelint-config-itgalaxy"
+  "extends": "stylelint-config-itgalaxy/css"
 }
 ```
 
