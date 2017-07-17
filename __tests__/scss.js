@@ -33,7 +33,7 @@ test("no warnings, deprecations and invalid options with valid scss", t => {
                 t.false(errored, "no errored");
                 t.is(
                     results[0].deprecations.length,
-                    1,
+                    0,
                     "flags no deprecations"
                 );
                 t.is(
