@@ -57,7 +57,7 @@
         "remark-cli": "^3.0.0",
         "remark-preset-lint-itgalaxy": "^6.0.0",
         "stylelint": "^8.0.0",
-        "stylelint-order": "^0.5.0",
+        "stylelint-order": "^0.6.0",
         "stylelint-scss": "^1.4.1"
     },
     "peerDependencies": {
