@@ -22,12 +22,7 @@
     "bugs": {
         "url": "https://github.com/itgalaxy/stylelint-config-itgalaxy/issues"
     },
-    "files": [
-        "lib",
-        "css.js",
-        "index.js",
-        "scss.js"
-    ],
+    "files": ["lib", "css.js", "index.js", "scss.js"],
     "devDependencies": {
         "ava": "^0.21.0",
         "babel-cli": "^6.11.0",
@@ -51,7 +46,7 @@
         "lint-staged": "^4.0.0",
         "npm-run-all": "^4.0.0",
         "npmpub": "^3.1.0",
-        "nyc": "^11.0.1",
+        "nyc": "^11.1.0",
         "pify": "^3.0.0",
         "prettier": "^1.5.2",
         "remark-cli": "^3.0.0",
@@ -61,7 +56,7 @@
         "stylelint-scss": "^1.4.1"
     },
     "peerDependencies": {
-        "stylelint": "^7.12.0",
+        "stylelint": "^8.0.0",
         "stylelint-scss": "^1.4.1",
         "stylelint-order": "^0.5.0"
     },
@@ -69,8 +64,9 @@
         "precommit": "lint-staged",
         "lint:eslint": "eslint . --ignore-path .gitignore",
         "lint:remark": "remark . -i .gitignore -f -q",
+        "lint:prettier": "prettier --tab-width 4 --list-different '{lib,__tests__}/**/*.{js,jsx,json}' '*.{js,json}'",
         "lint": "npm-run-all -l -p lint:**",
-        "prettier": "eslint . --fix --ignore-path .gitignore",
+        "prettier": "prettier --tab-width 4 --write '{lib,__tests__}/**/*.{js,jsx,json}' '*.{js,json}'",
         "pretest": "npm run lint",
         "test-only": "nyc ava --verbose '**/__tests__/*.js'",
         "test": "npm run test-only",
@@ -78,10 +74,7 @@
         "release": "npmpub"
     },
     "babel": {
-        "presets": [
-            "es2015",
-            "stage-0"
-        ]
+        "presets": ["es2015", "stage-0"]
     },
     "ava": {
         "require": "babel-register",
@@ -89,9 +82,7 @@
         "babel": "inherit"
     },
     "remarkConfig": {
-        "plugins": [
-            "remark-preset-lint-itgalaxy"
-        ]
+        "plugins": ["remark-preset-lint-itgalaxy"]
     },
     "eslintConfig": {
         "rules": {
