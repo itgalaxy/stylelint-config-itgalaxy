@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 35.0.0 - 2017-07-17
 
 -   Removed **(Major update)**: `declaration-block-no-ignored-properties` rule.
 

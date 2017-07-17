@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy",
-    "version": "34.0.0",
+    "version": "35.0.0",
     "description": "A mostly reasonable approach to CSS and SCSS.",
     "repository": {
         "type": "git",
@@ -22,7 +22,12 @@
     "bugs": {
         "url": "https://github.com/itgalaxy/stylelint-config-itgalaxy/issues"
     },
-    "files": ["lib", "css.js", "index.js", "scss.js"],
+    "files": [
+        "lib",
+        "css.js",
+        "index.js",
+        "scss.js"
+    ],
     "devDependencies": {
         "ava": "^0.21.0",
         "babel-cli": "^6.11.0",
@@ -74,7 +79,10 @@
         "release": "npmpub"
     },
     "babel": {
-        "presets": ["es2015", "stage-0"]
+        "presets": [
+            "es2015",
+            "stage-0"
+        ]
     },
     "ava": {
         "require": "babel-register",
@@ -82,7 +90,9 @@
         "babel": "inherit"
     },
     "remarkConfig": {
-        "plugins": ["remark-preset-lint-itgalaxy"]
+        "plugins": [
+            "remark-preset-lint-itgalaxy"
+        ]
     },
     "eslintConfig": {
         "rules": {
