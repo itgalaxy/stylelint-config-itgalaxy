@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-itgalaxy",
-    "version": "35.0.0",
+    "version": "36.0.0",
     "description": "A mostly reasonable approach to CSS and SCSS.",
     "repository": {
         "type": "git",
