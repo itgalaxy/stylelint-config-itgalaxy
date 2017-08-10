@@ -4,12 +4,12 @@
 @import url("y.css");
 
 :root {
-    --foo-bar: 1px;
-    --foo-var: 1em;
+  --foo-bar: 1px;
+  --foo-var: 1em;
 }
 
 .selector-with-composes {
-    composes: red from "./index.css";
+  composes: red from "./index.css";
 }
 
 /**
@@ -18,57 +18,57 @@
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-    box-sizing: border-box;
-    display: block !important;
-    color: #333;
-    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
-    font-weight: 700;
+  box-sizing: border-box;
+  display: block !important;
+  color: #333;
+  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  font-weight: 700;
 }
 
 @keyframes slip-n-slide {
-    from {
-        top: 0;
-    }
+  from {
+    top: 0;
+  }
 
-    to {
-        top: 200px;
-    }
+  to {
+    top: 200px;
+  }
 }
 
 .selector-a,
 .selector-b:not(:first-child) {
-    top: calc(calc(1em * 2) / 3);
-    padding: 10px !important;
-    animation: slip-n-slide 150ms linear;
+  top: calc(calc(1em * 2) / 3);
+  padding: 10px !important;
+  animation: slip-n-slide 150ms linear;
 
-    @media print {
-        body {
-            font-size: 10px;
-        }
+  @media print {
+    body {
+      font-size: 10px;
     }
+  }
 }
 
 @custom-media --small-viewport (max-width: 30em);
 
 @media (--small-viewport) {
-    .selector {
-        color: #fff;
-    }
+  .selector {
+    color: #fff;
+  }
 }
 
 @media (width >= 500px) and (width <= 1200px) {
-    .selector-media-with-ranges {
-        color: f1f;
-    }
+  .selector-media-with-ranges {
+    color: f1f;
+  }
 }
 
 /* or coupled with custom media queries */
 @custom-media --only-medium-screen (width >= 500px) and (width <= 1200px);
 
 @media (--only-medium-screen) {
-    .selector-inside-custom-media-with-ranges {
-        color: #f0f;
-    }
+  .selector-inside-custom-media-with-ranges {
+    color: #f0f;
+  }
 }
 
 @custom-selector :--button button, .button;
@@ -76,146 +76,152 @@
 
 /*
 :--button {
-    display: inline-block;
+  display: inline-block;
 }
 
 :--button:--enter {
-    background-color: #fff;
+  background-color: #fff;
 }
 */
 
 .selector-nesting {
-    /* direct nesting (& MUST be the first part of selector) */
-    & span {
-        color: #fff;
-    }
+  /* direct nesting (& MUST be the first part of selector) */
+  & span {
+    color: #fff;
+  }
 
-    /* @nest rule (for complex nesting) */
-    @nest span & {
-        color: #ff0;
-    }
+  /* @nest rule (for complex nesting) */
+  @nest span & {
+    color: #ff0;
+  }
 
-    /* media query automatic nesting */
-    @media (min-width: 30em) {
-        color: #ccc;
-    }
+  /* media query automatic nesting */
+  @media (min-width: 30em) {
+    color: #ccc;
+  }
 }
 
 .selector-color-function {
-    color: color(#fff alpha(-10%));
+  color: color(#fff alpha(-10%));
 }
 
 .selector-color-function:hover {
-    color: color(#fff blackness(80%));
+  color: color(#fff blackness(80%));
 }
 
 .selector-hbw-function {
-    color: hwb(90, 0%, 0%, 0.5);
+  color: hwb(90, 0%, 0%, 0.5);
 }
 
 .selector-gray-function {
-    color: gray(10%, 50%);
+  color: gray(10%, 50%);
 }
 
 .blur {
-    filter: blur(4px);
+  filter: blur(4px);
 }
 
 div.selector-display-initial {
-    display: initial;
+  display: initial;
 }
 
 div.selector-all-initial {
-    all: initial;
+  all: initial;
 }
 
 .selector-with-rem {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 nav :any-link {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .selector-multiple-matches:matches(:first-child, .special) {
-    color: #fff;
+  color: #fff;
 }
 
 .selector-multiple-not:not(:first-child, .special) {
-    color: #fff;
+  color: #fff;
 }
 
 .selector-calc-with-variables {
-    top: calc(var(--foo-bar) + var(--foo-var));
+  top: calc(var(--foo-bar) + var(--foo-var));
 }
 
 .selector-color-hex-rgba {
-    color: #fffa;
+  color: #fffa;
 }
 
 .selector-x {
-    width: 10%;
+  width: 10%;
 }
 
 .selector-y {
-    width: 20%;
+  width: 20%;
 }
 
 .selector-z {
-    width: 30%;
+  width: 30%;
 }
 
 .selector-external-http-background {
-    background-image: url("http://domain.com/background.svg");
+  background-image: url("http://domain.com/background.svg");
 }
 
 .selector-external-https-background {
-    background-image: url("https://domain.com/background.svg");
+  background-image: url("https://domain.com/background.svg");
 }
 
 /* Single-line comment */
 @media (min-width >= 60em) {
-    .selector {
-        /* Flush to parent comment */
-        transform: translate(1, 1) scale(3);
-    }
+  .selector {
+    /* Flush to parent comment */
+    transform: translate(1, 1) scale(3);
+  }
 }
 
 @media (orientation: portrait), projection and (color) {
-    .selector-i + .selector-ii {
-        top: 3.24563431px;
-        background: color(rgb(0, 0, 0) lightness(50%));
-        font-weight: lighter;
-        font-family: Arial, helvetica, "arial black", "sake_case_font", "MyFontVersion6", sans-serif;
-    }
+  .selector-i + .selector-ii {
+    top: 3.24563431px;
+    background: color(rgb(0, 0, 0) lightness(50%));
+    font-weight: lighter;
+    font-family:
+      Arial,
+      helvetica,
+      "arial black",
+      "sake_case_font",
+      "MyFontVersion6",
+      sans-serif;
+  }
 }
 
 /* Flush single line comment */
 @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    /* Comment here */
-    .selector {
-        height: 10rem;
-        background-image:
-            repeating-linear-gradient(
-                -45deg,
-                transparent,
-                #fff 25px,
-                rgba(255, 255, 255, 1) 50px
-            );
-        box-shadow:
-            0 1px 1px #000,
-            0 1px 0 #fff,
-            2px 2px 1px 1px #ccc inset;
-        margin: 10px;
-        margin-bottom: 5px;
-    }
+  screen and (min-resolution: 2dppx) {
+  /* Comment here */
+  .selector {
+    height: 10rem;
+    background-image:
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        #fff 25px,
+        rgba(255, 255, 255, 1) 50px
+      );
+    box-shadow:
+      0 1px 1px #000,
+      0 1px 0 #fff,
+      2px 2px 1px 1px #ccc inset;
+    margin: 10px;
+    margin-bottom: 5px;
+  }
 
-    /* Flush nested single line comment */
-    .selector::after {
-        content: "→";
-        background-image: url("x.svg");
-    }
+  /* Flush nested single line comment */
+  .selector::after {
+    content: "→";
+    background-image: url("x.svg");
+  }
 }
 
 /*
@@ -223,39 +229,39 @@ nav :any-link {
  */
 
 .foo {
-    margin: 1px 1px 1px 2px;
+  margin: 1px 1px 1px 2px;
 }
 
 [src] {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 [target="_blank"] {
-    display: block;
+  display: block;
 }
 
 [src][target="_blank"] {
-    display: block;
+  display: block;
 }
 
 [target="_blank"][title="test"] {
-    display: block;
+  display: block;
 }
 
 .class-1 .class-2 .class-3 .class-4 .class-5 {
-    display: block;
+  display: block;
 }
 
 @supports (display: flex) and (max-width: 100px) {
-    body {
-        display: flex;
-        max-width: 100px;
-    }
+  body {
+    display: flex;
+    max-width: 100px;
+  }
 }
 
 .bar {
-    font-size: 16px;
-    font-size: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* stylelint-disable block-no-empty */
@@ -265,21 +271,21 @@ nav :any-link {
 /* stylelint-enable block-no-empty */
 
 .very-complex-selector {
-    @apply --foo-theme;
-    @apply --bar-theme;
+  @apply --foo-theme;
+  @apply --bar-theme;
+  display: block;
+  font-size: 14px;
+
+  @media (--small-viewport) {
+    width: var(--width);
+    color: var(--color);
+  }
+
+  & span {
     display: block;
-    font-size: 14px;
+  }
 
-    @media (--small-viewport) {
-        width: var(--width);
-        color: var(--color);
-    }
-
-    & span {
-        display: block;
-    }
-
-    @nest span & {
-        display: inline-block;
-    }
+  @nest span & {
+    display: inline-block;
+  }
 }

@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
+-   Changed: `indentation` to `2`.
+
 -   Changed: `consecutive-duplicates` 
     to `consecutive-duplicates-with-different-values` 
     for `consecutive-duplicates-with-different-values` rule.

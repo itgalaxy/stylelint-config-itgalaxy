@@ -47,7 +47,7 @@ test("no warnings, deprecations and invalid options with valid css", t =>
 test("a warning with invalid css", t =>
     stylelint
         .lint({
-            code: ["a {", "    top: .2em;", "}", "\n"].join("\n"),
+            code: ["a {", "  top: .2em;", "}", "\n"].join("\n"),
             config
         })
         .then(data => {
