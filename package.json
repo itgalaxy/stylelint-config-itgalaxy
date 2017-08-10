@@ -55,7 +55,7 @@
         "pify": "^3.0.0",
         "prettier": "^1.5.2",
         "remark-cli": "^4.0.0",
-        "remark-preset-lint-itgalaxy": "^7.0.1",
+        "remark-preset-lint-itgalaxy": "^8.0.0",
         "stylelint": "^8.0.0",
         "stylelint-order": "^0.6.0",
         "stylelint-scss": "^2.0.0"
@@ -68,7 +68,7 @@
     "scripts": {
         "precommit": "lint-staged",
         "lint:eslint": "eslint . --ignore-path .gitignore",
-        "lint:remark": "remark . -i .gitignore -f -q",
+        "lint:remark": "remark . -i .gitignore -f",
         "lint:prettier": "prettier --tab-width 4 --list-different '{lib,__tests__}/**/*.{js,jsx}' '*.{js}'",
         "lint": "npm-run-all -l -p lint:**",
         "prettier": "prettier --tab-width 4 --write '{lib,__tests__}/**/*.{js,jsx}' '*.{js}'",
