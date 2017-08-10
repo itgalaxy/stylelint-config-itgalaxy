@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+-   Changed: `consecutive-duplicates` 
+    to `consecutive-duplicates-with-different-values` 
+    for `consecutive-duplicates-with-different-values` rule.
+
 # 37.0.0 - 2017-07-31
 
 -   Chore **(Major update)**: minimum required `stylelint-scss` version is now `^2.0.0`.
