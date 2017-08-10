@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
+-   Changed: `max-line-length` to `80`.
+
 -   Changed: `indentation` to `2`.
 
 -   Changed: `consecutive-duplicates` 
