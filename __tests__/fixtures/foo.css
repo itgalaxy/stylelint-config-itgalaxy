@@ -4,6 +4,7 @@
 @import url("y.css");
 
 :root {
+  /* Comment */
   --foo-bar: 1px;
   --foo-var: 1em;
 }
