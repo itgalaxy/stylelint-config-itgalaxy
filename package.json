@@ -68,7 +68,7 @@
     "scripts": {
         "precommit": "lint-staged",
         "lint:eslint": "eslint . --ignore-path .gitignore",
-        "lint:remark": "remark . -i .gitignore -f",
+        "lint:remark": "remark . -i .gitignore -f -q",
         "lint:prettier": "prettier --tab-width 4 --list-different '{lib,__tests__}/**/*.{js,jsx}' '*.{js}'",
         "lint": "npm-run-all -l -p lint:**",
         "prettier": "prettier --tab-width 4 --write '{lib,__tests__}/**/*.{js,jsx}' '*.{js}'",
