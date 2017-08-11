@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 ## Head
 
+- Added: `selector-max-compound-selectors` rule.
+
 - Changed: `max-line-length` to `80`.
 
 - Changed: `indentation` to `2`.
