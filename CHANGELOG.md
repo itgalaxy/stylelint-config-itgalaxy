@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 ## Head
 
+- Added: `selector-max-combinators` rule.
+
 - Added: `selector-max-type` rule.
 
 - Added: `selector-max-class` rule.
