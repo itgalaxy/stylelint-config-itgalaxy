@@ -55,7 +55,7 @@
         "pify": "^3.0.0",
         "prettier": "^1.5.2",
         "remark-cli": "^4.0.0",
-        "remark-preset-lint-itgalaxy": "^8.0.0",
+        "remark-preset-lint-itgalaxy": "^9.0.0",
         "stylelint": "^8.0.0",
         "stylelint-order": "^0.6.0",
         "stylelint-scss": "^2.0.0"
