@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 ## Head
 
+- Changed: `max-line-length` to `120`.
 - Changed: ignore `comments` in `max-line-length` rule.
 
 ## 38.0.0 - 2017-08-11
