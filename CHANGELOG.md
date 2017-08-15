@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## Head
+
+- Changed: ignore `comments` in `max-line-length` rule.
+
 ## 38.0.0 - 2017-08-11
 
 - Added: `selector-max-combinators` rule.
