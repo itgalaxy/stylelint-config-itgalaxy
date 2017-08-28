@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org).
 ## Head
 
 - Added: `at-else-if-parentheses-space-before` rule.
+- Added: `at-function-parentheses-space-before` rule.
 - Chore **(Major update)**: minimum required version `stylelint-scss` is now `^2.1.0`.
 
 ## 39.0.0 - 2107-08-12
