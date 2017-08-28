@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## Head
+
+- Chore **(Major update)**: minimum required version `stylelint-scss` is now `^2.1.0`.
+
 ## 39.0.0 - 2107-08-12
 
 - Changed: `max-line-length` to `120`.
