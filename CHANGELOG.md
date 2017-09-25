@@ -4,12 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 41.0.0 - 2017-09-25
+
+- Chore **(Major update)**: minimum required `stylelint-order` version is now `^0.7.0`.
+
 ## 40.0.0 - 2017-08-28
 
 - Added: `at-else-if-parentheses-space-before` rule.
 - Added: `at-function-parentheses-space-before` rule.
 - Added: `at-mixin-parentheses-space-before` rule.
-- Chore **(Major update)**: minimum required version `stylelint-scss` is now `^2.1.0`.
+- Chore **(Major update)**: minimum required `stylelint-scss` version is now `^2.1.0`.
 
 ## 39.0.0 - 2017-08-12
 
