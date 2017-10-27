@@ -170,7 +170,7 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 ## 16.0.0 - 2016-11-28
 
-- Added **(Major update)**: `transition-property` with `all` value  in `declaration-property-value-blacklist` rule. 
+- Added **(Major update)**: `transition-property` with `all` value  in `declaration-property-value-blacklist` rule.
 - Changed: `block-no-single-line` rule now have `null` option.
 - Changed: `block-opening-brace-newline-after` rule now have `always` option.
 - Changed: `block-opening-brace-space-after` rule now have `null` option.
