@@ -1,4 +1,4 @@
-import config from "../index";
+import config from "..";
 import fs from "fs";
 import path from "path";
 import pify from "pify";
