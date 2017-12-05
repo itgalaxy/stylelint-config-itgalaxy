@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-itgalaxy",
-  "version": "42.0.0",
+  "version": "43.0.0",
   "description": "A mostly reasonable approach to CSS and SCSS.",
   "repository": {
     "type": "git",
@@ -54,22 +54,22 @@
     "remark-cli": "^4.0.0",
     "remark-preset-lint-itgalaxy": "^12.0.0",
     "stylelint": "^8.3.1",
-    "stylelint-order": "^0.7.0",
+    "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.1.0"
   },
   "peerDependencies": {
     "stylelint": "^8.3.1",
     "stylelint-scss": "^2.1.0",
-    "stylelint-order": "^0.7.0"
+    "stylelint-order": "^0.8.0"
   },
   "scripts": {
     "precommit": "lint-staged",
-    "lint:prettier": "prettier --list-different '{lib,__tests__}/**/*.{js,jsx,md}' '*.{js,md}'",
+    "lint:prettier": "prettier --list-different '{lib,__tests__}/**/*.{js,mjs,jsx,md}' '*.{js,mjs,jsx,md}'",
     "lint:remark": "remark . -i .gitignore -f -q",
-    "lint:eslint": "eslint . '.*.js' --ignore-path .gitignore --report-unused-disable-directives --ext '.js,.jsx'",
+    "lint:eslint": "eslint . '.*.{js,mjs,jsx}' --ignore-path .gitignore --report-unused-disable-directives --ext '.js,.mjs,.jsx'",
     "lint": "npm-run-all -l -p 'lint:**'",
-    "fix:prettier": "prettier --write '{lib,__tests__}/**/*.{js,jsx,md}' '*.{js,md}'",
-    "fix:eslint": "eslint . '.*.js' --fix --ignore-path .gitignore --ext '.js,.jsx'",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "fix:eslint": "npm run lint:eslint -- --fix",
     "fix": "npm-run-all -l -p 'fix:**'",
     "pretest": "npm run lint",
     "test-only": "nyc ava --verbose '**/__tests__/*.js'",
@@ -119,6 +119,6 @@
     "root": true
   },
   "engines": {
-    "node": ">= 4.3 < 5.0.0 || >= 5.10"
+    "node": ">= 6.9.0 || >= 8.9.0"
   }
 }

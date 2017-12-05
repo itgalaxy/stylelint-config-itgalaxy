@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 43.0.0 - 2017-12-05
+
+* Changed: minimum required `stylelint-order` version is now `^0.8.0`.
+* Changed: minimum required `nodejs` version is now `^6.9.0`.
+
 ## 42.0.0 - 2017-11-28
 
 * Added: `font-family-no-missing-generic-family-keyword` rule.
