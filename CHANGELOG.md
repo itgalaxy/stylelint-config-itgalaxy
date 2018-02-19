@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 44.0.0 - 2017-02-13
+
+* Changed: minimum required `stylelint` version is now `^9.0.0`.
+* Changed: minimum required `stylelint-scss` version is now `^9.0.0`.
+
 ## 43.0.0 - 2017-12-05
 
 * Changed: minimum required `stylelint-order` version is now `^0.8.0`.
