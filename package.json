@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-itgalaxy",
-  "version": "44.0.0",
+  "version": "45.0.0",
   "description": "A mostly reasonable approach to CSS and SCSS.",
   "repository": {
     "type": "git",
@@ -30,12 +30,13 @@
   ],
   "devDependencies": {
     "ava": "^0.25.0",
+    "babel-eslint": "^8.2.2",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.9.0",
     "eslint": "^4.1.1",
     "eslint-plugin-ava": "^4.2.1",
     "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-itgalaxy": "^64.0.0",
+    "eslint-plugin-itgalaxy": "^66.0.0",
     "eslint-plugin-jest": "^21.1.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-lodash": "^2.4.3",
@@ -45,7 +46,7 @@
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-unicorn": "^4.0.2",
     "husky": "^0.14.0",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^7.0.0",
     "npm-run-all": "^4.0.0",
     "npmpub": "^3.1.0",
     "nyc": "^11.1.0",
@@ -55,15 +56,17 @@
     "remark-preset-lint-itgalaxy": "^12.0.0",
     "stylelint": "^9.0.0",
     "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.3.0"
+    "stylelint-scss": "^3.0.0",
+    "stylelint-find-rules": "^1.1.1"
   },
   "peerDependencies": {
     "stylelint": "^9.0.0",
-    "stylelint-scss": "^2.3.0",
+    "stylelint-scss": "^3.0.0",
     "stylelint-order": "^0.8.0"
   },
   "scripts": {
     "precommit": "lint-staged",
+    "lint:check-rules": "stylelint-find-rules --config lib/config/all.js",
     "lint:prettier": "prettier --list-different '{lib,__tests__}/**/*.{js,mjs,jsx,md}' '*.{js,mjs,jsx,md}'",
     "lint:remark": "remark . -i .gitignore -f -q",
     "lint:eslint": "eslint . '.*.{js,mjs,jsx}' --ignore-path .gitignore --report-unused-disable-directives --ext '.js,.mjs,.jsx'",
