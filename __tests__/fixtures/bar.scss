@@ -4,13 +4,11 @@
 
 // Variables
 $variable: 10px;
-$box-shadow:
-  0 0 0 1px #5b9dd9,
+$box-shadow: 0 0 0 1px #5b9dd9,
   0 0 2px 1px rgba(30, 140, 190, 0.8);
 $sum: 10px + 10px;
-$long-sum:
-  100px + 100px + 100px + 100px + 100px + 100px
-  - 8000px * 2px / 4px;
+$long-sum: 100px + 100px + 100px + 100px + 100px + 100px -
+  8000px * 2px / 4px;
 
 @function my-calculation-function($some-number, $another-number) {
   @return $some-number + $another-number;
