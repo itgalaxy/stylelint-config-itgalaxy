@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
-## 47.0.0 - 2017-06-21
+## 48.0.0 - 2018-07-26
+
+- Added: `linebreaks` rule.
+- Changed: minimum required `stylelint` version is now `^9.4.0`.
+
+## 47.0.0 - 2018-06-21
 
 - Added: `keyframes-name-pattern` rule.
 - Added: `scss/operator-no-newline-before` rule.
