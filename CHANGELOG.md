@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 49.0.0 - 2018-08-10
+
+- Changed: minimum required `stylelint-order` version is now `^1.0.0`.
+
 ## 48.0.0 - 2018-07-26
 
 - Added: `linebreaks` rule.
