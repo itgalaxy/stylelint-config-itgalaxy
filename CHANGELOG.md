@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 50.0.0 - 2018-10-01
+
+- Added: `no-empty-first-line` rule.
+- Changed: minimum required `stylelint` version is now `^9.6.0`.
+
 ## 49.0.0 - 2018-08-10
 
 - Changed: minimum required `stylelint-order` version is now `^1.0.0`.

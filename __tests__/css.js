@@ -41,14 +41,14 @@ test("no warnings, deprecations and invalid options with valid css", t =>
 test("a warning with invalid css", t =>
   stylelint
     .lint({
-      code: ["a {", "  top: .2em;", "}", "\n"].join("\n"),
+      code: "a { top: .2em; }",
       config
     })
     .then(data => {
       const { errored, results } = data;
 
       t.true(errored, "errored");
-      t.is(results[0].warnings.length, 1, "flags one warning");
+      t.is(results[0].warnings.length, 4, "flags one warning");
       t.is(
         results[0].warnings[0].text,
         "Expected a leading zero (number-leading-zero)",

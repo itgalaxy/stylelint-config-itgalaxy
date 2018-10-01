@@ -57,7 +57,7 @@ test("a warning with invalid scss", t => {
       const { errored, results } = data;
 
       t.true(errored, "errored");
-      t.is(results[0].warnings.length, 1, "flags one warning");
+      t.is(results[0].warnings.length, 2, "flags one warning");
       t.is(
         results[0].warnings[0].text,
         'Unexpected extension ".scss" in imported partial name' +
