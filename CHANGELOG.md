@@ -4,19 +4,23 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 51.0.0 - 2018-11-21
+
+- Chore: minimum required `stylelint-order` version is now `^2.0.0`.
+
 ## 50.0.0 - 2018-10-01
 
 - Added: `no-empty-first-line` rule.
-- Changed: minimum required `stylelint` version is now `^9.6.0`.
+- Chore: minimum required `stylelint` version is now `^9.6.0`.
 
 ## 49.0.0 - 2018-08-10
 
-- Changed: minimum required `stylelint-order` version is now `^1.0.0`.
+- Chore: minimum required `stylelint-order` version is now `^1.0.0`.
 
 ## 48.0.0 - 2018-07-26
 
 - Added: `linebreaks` rule.
-- Changed: minimum required `stylelint` version is now `^9.4.0`.
+- Chore: minimum required `stylelint` version is now `^9.4.0`.
 
 ## 47.0.0 - 2018-06-21
 
@@ -32,27 +36,27 @@ This project adheres to [Semantic Versioning](http://semver.org).
 ## 46.0.0 - 2018-05-04
 
 - Added: `scss/no-duplicate-dollar-variables` rule.
-- Changed: minimum required `stylelint-scss` version is now `^3.1.0`.
+- Chore: minimum required `stylelint-scss` version is now `^3.1.0`.
 
 ## 45.0.0 - 2018-02-13
 
-- Changed: minimum required `stylelint-scss` version is now `^3.0.0`.
+- Chore: minimum required `stylelint-scss` version is now `^3.0.0`.
 
 ## 44.0.0 - 2018-02-13
 
-- Changed: minimum required `stylelint` version is now `^9.0.0`.
-- Changed: minimum required `stylelint-scss` version is now `^2.3.0`.
+- Chore: minimum required `stylelint` version is now `^9.0.0`.
+- Chore: minimum required `stylelint-scss` version is now `^2.3.0`.
 
 ## 43.0.0 - 2017-12-05
 
-- Changed: minimum required `stylelint-order` version is now `^0.8.0`.
-- Changed: minimum required `nodejs` version is now `^6.9.0`.
+- Chore: minimum required `stylelint-order` version is now `^0.8.0`.
+- Chore: minimum required `nodejs` version is now `^6.9.0`.
 
 ## 42.0.0 - 2017-11-28
 
 - Added: `font-family-no-missing-generic-family-keyword` rule.
 - Added: `no-duplicate-at-import-rules` rule.
-- Changed: minimum required `stylelint` version is now `^8.3.1`.
+- Chore: minimum required `stylelint` version is now `^8.3.1`.
 
 ## 41.0.0 - 2017-09-25
 
