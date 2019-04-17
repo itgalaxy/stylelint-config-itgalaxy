@@ -307,3 +307,156 @@ nav :any-link {
     bottom: 0;
   }
 }
+
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyFont";
+}
+
+.transition-1 {
+  transition: width 2s;
+}
+
+.transition-1 {
+  transition: all 2s;
+}
+
+.transition-property-1 {
+  transition-property: width;
+}
+
+.transition-property-2 {
+  transition-property: all;
+}
+
+a {
+  top: .2em;
+}
+
+a { unknown: unknown }
+
+@unknown {}
+
+.empty {}
+.empty-with-comment {
+  /* Comment */
+}
+
+.custom-properties {
+  --foo: 10px;
+  --bar: 20px;
+
+  width: calc(var(--foo) + var(--bar));
+}
+
+.hex {
+  color: #fff;
+  background-color: #ffffff;
+}
+
+a {
+  animation: slip-n-slide 90MS LINEAR;
+}
+
+.unit {
+  width: 100px;
+  margin: 10in;
+}
+
+@media print and (min-resolution: 300dpi) {
+  .foo {
+    margin: 20px 15px;
+  }
+}
+
+/**/
+
+a {
+  color: black;
+}
+
+a {
+  display: -webkit-flex;
+}
+
+.zero {
+  top: 0.5000px;
+  right: .1px;
+  bottom: 1px;
+  left: 1.5px
+}
+
+a[id="foo"] {
+  content: "x";
+}
+
+a[id="bar"] {
+  content: 'x';
+}
+
+a {
+  background: -WEBKIT-RADIAL-GRADIENT(red, green, blue);
+}
+
+a {
+  WIDTH: 1px
+}
+
+@media screen and (max-device-width: 799px) {
+  .red {
+    color: red;
+  }
+}
+
+@media screen and (MIN-DEVICE-ASPECT-RATIO: 16/9) {
+  article {
+    padding: 1rem 5vw;
+  }
+}
+
+number {
+  top: 3.24563412312312px;
+  right: 2.12345678px;
+}
+
+a {
+  top: 0px;
+}
+
+@-webkit-keyframes foo {
+  0% {
+    top: 0;
+  }
+}
+
+a:unknown {
+  color: #fff;
+}
+
+a::unknown {
+  color: #000;
+}
+
+@media screen and (unknown) {}
+@media screen and (unknown: 10px) {}
+
+a { color: #00; }
+a { color: #fff1az; }
+a { color: #12345aa; }
+
+a { font-family: serif, serif; }
+a { font-family: Helvetica, Arial, Verdana, Tahoma; }
+
+.foo { background: linear-gradient(top, #fff, #000); }
+.foo { background: linear-gradient(bottom, #fff, #000); }
+.foo { background: linear-gradient(left, #fff, #000); }
+.foo { background: linear-gradient(45, #fff, #000); }
+.foo { background: linear-gradient(to top top, #fff, #000); }
+
+a { color: pink;; }
