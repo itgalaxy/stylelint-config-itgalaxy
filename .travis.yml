@@ -23,17 +23,13 @@ matrix:
       env: JOB_PART=pretest
     - node_js: '11'
       script: npm run $JOB_PART
-      env: JOB_PART=test-only
+      env: JOB_PART=test:only
     - node_js: '10'
       script: npm run $JOB_PART
-      env: JOB_PART=test-only
+      env: JOB_PART=test:only
     - node_js: '8'
       script: npm run $JOB_PART
-      env: JOB_PART=test-only
-    - node_js: '6'
-      script: npm run $JOB_PART
-      env: JOB_PART=test-only
-      sudo: required
+      env: JOB_PART=test:only
 
 before_install:
   - npm i -g npm@latest
