@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 53.0.0 - 2019-04-19
+
+- Changed: minimum required `stylelint-order` version is now `^3.0.0`.
+
 ## 52.0.0 - 2019-04-17
 
 - Added: `at-rule-property-requirelist` rule.

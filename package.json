@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-itgalaxy",
-  "version": "52.0.0",
+  "version": "53.0.0",
   "description": "A mostly reasonable approach to CSS and SCSS.",
   "repository": {
     "type": "git",
@@ -52,20 +52,19 @@
     "lint-staged": "^8.0.5",
     "npm-run-all": "^4.0.0",
     "npmpub": "^4.0.1",
-    "nyc": "^14.0.0",
     "pify": "^4.0.0",
     "prettier": "^1.5.2",
     "remark-cli": "^6.0.1",
     "remark-preset-lint-itgalaxy": "^14.0.0",
     "stylelint": "^10.0.1",
-    "stylelint-order": "^2.2.1",
+    "stylelint-order": "^3.0.0",
     "stylelint-scss": "^3.6.0",
     "stylelint-find-rules": "^2.0.0"
   },
   "peerDependencies": {
     "stylelint": "^10.0.1",
     "stylelint-scss": "^3.6.0",
-    "stylelint-order": "^2.2.1"
+    "stylelint-order": "^3.0.0"
   },
   "scripts": {
     "lint:check-rules": "stylelint-find-rules --config lib/config/all.js",
