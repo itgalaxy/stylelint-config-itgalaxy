@@ -247,6 +247,13 @@ Array [
     "text": "Expected \\"#ffffff\\" to be \\"#fff\\" (color-hex-length)",
   },
   Object {
+    "column": 13,
+    "line": 13,
+    "rule": "color-named",
+    "severity": "error",
+    "text": "Unexpected named color \\"red\\" (color-named)",
+  },
+  Object {
     "column": 10,
     "line": 381,
     "rule": "color-named",
@@ -651,6 +658,13 @@ Array [
     "rule": "property-case",
     "severity": "error",
     "text": "Expected \\"WIDTH\\" to be \\"width\\" (property-case)",
+  },
+  Object {
+    "column": 3,
+    "line": 13,
+    "rule": "property-no-unknown",
+    "severity": "error",
+    "text": "Unexpected unknown property \\"composes\\" (property-no-unknown)",
   },
   Object {
     "column": 5,
@@ -1035,6 +1049,13 @@ Array [
     "text": "Expected \\"#ffffff\\" to be \\"#fff\\" (color-hex-length)",
   },
   Object {
+    "column": 13,
+    "line": 13,
+    "rule": "color-named",
+    "severity": "error",
+    "text": "Unexpected named color \\"red\\" (color-named)",
+  },
+  Object {
     "column": 10,
     "line": 381,
     "rule": "color-named",
@@ -1439,6 +1460,13 @@ Array [
     "rule": "property-case",
     "severity": "error",
     "text": "Expected \\"WIDTH\\" to be \\"width\\" (property-case)",
+  },
+  Object {
+    "column": 3,
+    "line": 13,
+    "rule": "property-no-unknown",
+    "severity": "error",
+    "text": "Unexpected unknown property \\"composes\\" (property-no-unknown)",
   },
   Object {
     "column": 5,
