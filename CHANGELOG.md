@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 54.0.0 - 2019-06-03
+
+- Added: `scss/at-each-key-value-single-line` rule.
+- Added: `scss/function-quote-no-quoted-strings-inside` rule.
+- Added: `scss/function-unquote-no-unquoted-strings-inside` rule.
+- Changed: minimum required `stylelint-scss` version is now `^3.8.0`.
+
 ## 53.0.0 - 2019-04-19
 
 - Changed: minimum required `stylelint-order` version is now `^3.0.0`.
