@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-itgalaxy",
-  "version": "54.0.0",
+  "version": "55.0.0",
   "description": "A mostly reasonable approach to CSS and SCSS.",
   "repository": {
     "type": "git",
@@ -29,56 +29,55 @@
     "scss.js"
   ],
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "babel-jest": "^24.8.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-ava": "^7.0.0",
-    "eslint-plugin-html": "^5.0.5",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-itgalaxy": "^102.0.0",
-    "eslint-plugin-jest": "^22.6.4",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-lodash": "^5.1.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "babel-jest": "^24.9.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-ava": "^9.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-itgalaxy": "^113.0.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-lodash": "^6.0.0",
     "eslint-plugin-markdown": "^1.0.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-unicorn": "^9.0.0",
-    "husky": "^2.3.0",
-    "jest": "^24.8.0",
-    "lint-staged": "^8.1.7",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-unicorn": "^12.0.1",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.0",
     "npm-run-all": "^4.1.5",
-    "npmpub": "^4.1.0",
-    "pify": "^4.0.1",
-    "prettier": "^1.17.1",
-    "remark-cli": "^6.0.1",
-    "remark-preset-lint-itgalaxy": "^14.0.0",
-    "stylelint": "^10.0.1",
-    "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.8.0",
-    "stylelint-find-rules": "^2.0.0"
+    "prettier": "^1.18.2",
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-itgalaxy": "^15.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-order": "^3.1.0",
+    "stylelint-scss": "^3.10.1",
+    "stylelint-find-rules": "^2.1.0",
+    "standard-version": "^7.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^10.0.1",
-    "stylelint-scss": "^3.8.0",
-    "stylelint-order": "^3.0.0"
+    "stylelint": "^11.0.0",
+    "stylelint-scss": "^3.10.1",
+    "stylelint-order": "^3.1.0"
   },
   "scripts": {
     "lint:check-rules": "stylelint-find-rules --config lib/config/all.js",
-    "lint:prettier": "prettier --list-different '{lib,__tests__}/**/*.{js,mjs,jsx,md}' '*.{js,mjs,jsx,md}'",
+    "lint:prettier": "prettier --list-different \"{lib,__tests__}/**/*.{js,cjs,mjs,jsx,md}\" \"*.{js,cjs,mjs,jsx,md}\"",
     "lint:md": "remark . -i .gitignore -f -q",
-    "lint:js": "eslint . --cache --cache-location 'node_modules/.cache/eslint/.eslintcache' --report-unused-disable-directives --ignore-pattern '!.*' --ignore-path .gitignore --ext '.js,.mjs,.jsx'",
-    "lint": "npm-run-all -l -p 'lint:**'",
+    "lint:js": "eslint . --cache --cache-location \"node_modules/.cache/eslint/.eslintcache\" --ignore-pattern \"!.*\" --ignore-path .gitignore --ext \".js,.cjs,.mjs,.jsx\"",
+    "lint": "npm-run-all -l -p \"lint:**\"",
     "prettier": "npm run lint:prettify -- --write",
     "fix:js": "npm run lint:js -- --fix",
-    "fix": "npm-run-all -l prettify -p 'fix:**'",
+    "fix": "npm-run-all -c -l -p \"fix:**\" -s prettier",
     "pretest": "npm run lint",
     "test:only": "jest",
     "test": "npm run test:only",
-    "release": "npmpub"
+    "release": "standard-version"
   },
   "babel": {
     "presets": [
@@ -96,33 +95,6 @@
     "plugins": [
       "remark-preset-lint-itgalaxy"
     ]
-  },
-  "eslintConfig": {
-    "parserOptions": {
-      "sourceType": "script"
-    },
-    "rules": {
-      "sort-keys": "off"
-    },
-    "extends": [
-      "plugin:itgalaxy/node",
-      "plugin:itgalaxy/esnext",
-      "plugin:itgalaxy/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/**/*.js"
-        ],
-        "parserOptions": {
-          "sourceType": "module"
-        },
-        "rules": {
-          "node/no-unsupported-features/es-syntax": "off"
-        }
-      }
-    ],
-    "root": true
   },
   "engines": {
     "node": ">= 8.9.0"

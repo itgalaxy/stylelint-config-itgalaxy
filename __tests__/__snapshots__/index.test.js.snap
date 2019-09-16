@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`integration core configuration test: deprecations 1`] = `Array []`;
+exports[`presets integration "core" configuration test: deprecations 1`] = `Array []`;
 
-exports[`integration core configuration test: invalidOptionWarnings 1`] = `Array []`;
+exports[`presets integration "core" configuration test: invalidOptionWarnings 1`] = `Array []`;
 
-exports[`integration core configuration test: parseErrors 1`] = `Array []`;
+exports[`presets integration "core" configuration test: parseErrors 1`] = `Array []`;
 
-exports[`integration core configuration test: warnings 1`] = `
+exports[`presets integration "core" configuration test: warnings 1`] = `
 Array [
   Object {
     "column": 1,
@@ -802,13 +802,13 @@ Array [
 ]
 `;
 
-exports[`integration css configuration test: deprecations 1`] = `Array []`;
+exports[`presets integration "css" configuration test: deprecations 1`] = `Array []`;
 
-exports[`integration css configuration test: invalidOptionWarnings 1`] = `Array []`;
+exports[`presets integration "css" configuration test: invalidOptionWarnings 1`] = `Array []`;
 
-exports[`integration css configuration test: parseErrors 1`] = `Array []`;
+exports[`presets integration "css" configuration test: parseErrors 1`] = `Array []`;
 
-exports[`integration css configuration test: warnings 1`] = `
+exports[`presets integration "css" configuration test: warnings 1`] = `
 Array [
   Object {
     "column": 1,
@@ -1604,14 +1604,21 @@ Array [
 ]
 `;
 
-exports[`integration scss configuration test: deprecations 1`] = `Array []`;
+exports[`presets integration "scss" configuration test: deprecations 1`] = `Array []`;
 
-exports[`integration scss configuration test: invalidOptionWarnings 1`] = `Array []`;
+exports[`presets integration "scss" configuration test: invalidOptionWarnings 1`] = `Array []`;
 
-exports[`integration scss configuration test: parseErrors 1`] = `Array []`;
+exports[`presets integration "scss" configuration test: parseErrors 1`] = `Array []`;
 
-exports[`integration scss configuration test: warnings 1`] = `
+exports[`presets integration "scss" configuration test: warnings 1`] = `
 Array [
+  Object {
+    "column": 23,
+    "line": 4,
+    "rule": "scss/at-import-partial-extension",
+    "severity": "error",
+    "text": "Unexpected extension \\".scss\\" in @import (scss/at-import-partial-extension)",
+  },
   Object {
     "column": 23,
     "line": 4,

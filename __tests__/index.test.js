@@ -1,13 +1,13 @@
-import coreConfig from "..";
-import cssConfig from "../css";
-import scssConfig from "../scss";
+import util from "util";
 import fs from "fs";
 import path from "path";
-import pify from "pify";
 import stylelint from "stylelint";
+import scssConfig from "../scss";
+import cssConfig from "../css";
+import coreConfig from "..";
 
 const fixturesDir = path.resolve(__dirname, "fixtures");
-const configPresets = {
+const presets = {
   core: {
     config: coreConfig,
     testFile: path.join(fixturesDir, "foo.css")
@@ -23,30 +23,33 @@ const configPresets = {
   }
 };
 
-Object.keys(configPresets).forEach(configName => {
-  test(`integration ${configName} configuration test`, () => {
-    const { config, syntax, testFile } = configPresets[configName];
+const readFile = util.promisify(fs.readFile);
 
-    return pify(fs.readFile)(testFile).then(code =>
-      stylelint
-        .lint({
-          syntax,
-          code: code.toString(),
-          config
-        })
-        .then(data => {
-          const { results } = data;
+describe("presets", () => {
+  Object.keys(presets).forEach(configName => {
+    it(`integration "${configName}" configuration test`, () => {
+      const { config, syntax, testFile } = presets[configName];
 
-          expect(results[0].deprecations).toMatchSnapshot("deprecations");
-          expect(results[0].invalidOptionWarnings).toMatchSnapshot(
-            "invalidOptionWarnings"
-          );
-          expect(results[0].parseErrors).toMatchSnapshot("parseErrors");
+      return readFile(testFile).then(code =>
+        stylelint
+          .lint({
+            syntax,
+            code: code.toString(),
+            config
+          })
+          .then(data => {
+            const { results } = data;
 
-          expect(results[0].warnings).toMatchSnapshot("warnings");
+            expect(results[0].deprecations).toMatchSnapshot("deprecations");
+            expect(results[0].invalidOptionWarnings).toMatchSnapshot(
+              "invalidOptionWarnings"
+            );
+            expect(results[0].parseErrors).toMatchSnapshot("parseErrors");
+            expect(results[0].warnings).toMatchSnapshot("warnings");
 
-          return true;
-        })
-    );
+            return true;
+          })
+      );
+    });
   });
 });
