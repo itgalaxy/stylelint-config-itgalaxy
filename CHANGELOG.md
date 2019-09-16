@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 55.0.0 - 2019-09-16
+
+- Added: `unicode-bom` rule.
+- Added: `scss/at-if-no-null` rule.
+- Added: `scss/at-import-partial-extension` rule.
+- Added: `scss/map-keys-quotes` rule.
+- Added: `scss/dimension-no-non-numeric-values` rule.
+- Chore: minimum required `stylelint` version is now `^11.0.0`.
+- Chore: minimum required `stylelint-scss` version is now `^3.10.1`.
+- Chore: minimum required `stylelint-order` version is now `^3.1.0`.
+
 ## 54.0.0 - 2019-06-03
 
 - Added: `scss/at-each-key-value-single-line` rule.
