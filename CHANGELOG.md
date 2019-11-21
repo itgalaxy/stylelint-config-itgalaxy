@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 56.0.0 - 2019-11-20
+
+- Added: `scss/no-duplicate-mixins` rule.
+- Fixed: add `forward` and `use` at-rules to the `at-rule-no-unknown` rule.
+- Changed: minimum required node version is `10.13`.
+- Changed: minimum required `stylelint` version is now `^12.0.0`.
+- Changed: minimum required `stylelint-scss` version is now `^3.13.0`.
+- Changed: minimum required `stylelint-order` version is now `^3.1.1`.
+
 ## 55.0.0 - 2019-09-16
 
 - Added: `unicode-bom` rule.
