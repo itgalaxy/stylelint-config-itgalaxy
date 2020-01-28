@@ -13,6 +13,12 @@ module.exports = {
       excludedFiles: ["**/*.md"],
       files: ["**/__tests__/**/*", "**/__mocks__/**/*"],
       rules: {
+        // Test can be written with using ES module syntax or CommonJS module syntax
+        "node/no-unsupported-features/es-syntax": [
+          "error",
+          { ignores: ["modules", "dynamicImport"] }
+        ],
+
         // Allow to use `console` (example - `mocking`)
         "no-console": "off"
       }

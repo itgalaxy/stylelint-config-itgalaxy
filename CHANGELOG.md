@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 58.0.0 - 2020-01-13
+
+- Changed: minimum required `stylelint` version is now `^13.0.0`.
+- Changed: minimum required `stylelint-order` version is now `^4.0.0`.
+- Changed: minimum required `stylelint-scss` version is now `^3.14.0`.
+
 ## 57.0.0 - 2019-11-21
 
 - Fixed: broken release due npm problems.

@@ -2,9 +2,9 @@ import util from "util";
 import fs from "fs";
 import path from "path";
 import stylelint from "stylelint";
-import scssConfig from "../scss";
-import cssConfig from "../css";
-import coreConfig from "..";
+import scssConfig from "../scss.js";
+import cssConfig from "../css.js";
+import coreConfig from "../index.js";
 
 const fixturesDir = path.resolve(__dirname, "fixtures");
 const presets = {
